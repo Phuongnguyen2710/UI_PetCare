@@ -40,7 +40,7 @@ namespace UI_PetCare
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form1 f1 = new Form1();
+            fLogin f1 = new fLogin();
             f1.ShowDialog();
         }
 

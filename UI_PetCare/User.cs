@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UI_PetCare
 {
-    internal class register
+    internal class User
     {
         //Create a class for register... using this .
         public string username { get; set; }

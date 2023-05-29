@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.UI.WebControls;
@@ -20,15 +21,15 @@ namespace UI_PetCare
         {
             InitializeComponent();
         }
+
         IFirebaseConfig config = new FirebaseConfig
         {
-
             AuthSecret = "BFp0TAb8sUuV5tkaRZDWlk5NzOdrFLJWr2NkqPxt",
             BasePath = "https://registerandlogin-31e76-default-rtdb.firebaseio.com/"
-
         };
 
         IFirebaseClient client;
+
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
@@ -38,39 +39,56 @@ namespace UI_PetCare
                 || string.IsNullOrEmpty(guna2TextBox3.Text) || string.IsNullOrEmpty(guna2TextBox4.Text))
             {
                 //Check all textbox if some are Empty.
-                MessageBox.Show("Please Specify All Data Needed.");
+                MessageBox.Show("Please specify all data needed.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
             else
             {
+                string hashPass = ComputeSha256Hash(guna2TextBox2.Text);
 
-                //The Register Class
-                var register = new register
+                //The User Class
+                var user = new User
                 {
 
                     username = guna2TextBox1.Text,
-                    password = guna2TextBox2.Text,
+                    password = hashPass,
                     email = guna2TextBox3.Text,
                     phone = guna2TextBox4.Text,
 
                 };
 
+
                 //but if you want to have like a unique key use Push not Set.
-                FirebaseResponse response = client.Set("Users/" + guna2TextBox1.Text, register);
+                FirebaseResponse response = client.Set("Users/" + guna2TextBox1.Text, user);
 
-                register res = response.ResultAs<register>();
                 MessageBox.Show("Register Account Successfully");
-                guna2TextBox1.Text = string.Empty;
-                guna2TextBox2.Text = string.Empty;
-                guna2TextBox3.Text = string.Empty;
-                guna2TextBox4.Text = string.Empty;
+                this.Close();
+                fLogin f1 = new fLogin();
+                f1.Show();
+            }
+        }
 
+        private static string ComputeSha256Hash(string rawData)
+        {
+            using (SHA256 sha256Hash = SHA256.Create())
+            {
+                // ComputeHash - returns byte array  
+                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(rawData));
+
+                // Convert byte array to a string   
+                StringBuilder builder = new StringBuilder();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    builder.Append(bytes[i].ToString("x2"));
+                }
+                return builder.ToString();
             }
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form1 f1 = new Form1();
+            fLogin f1 = new fLogin();
             f1.Show();
         }
 
