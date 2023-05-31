@@ -112,5 +112,12 @@ namespace UI_PetCare
         {
             Application.Exit();
         }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form_FgtPass form_FgtPass = new Form_FgtPass();
+            form_FgtPass.ShowDialog();
+        }
     }
 }
