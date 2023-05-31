@@ -44,7 +44,7 @@ namespace UI_PetCare
 
         private async void guna2Button1_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(guna2TextBox2.Text))
+            if (string.IsNullOrEmpty(guna2TextBox2.Text) || string.IsNullOrEmpty(guna2TextBox3.Text))
             {
                 MessageBox.Show("Please input your password!");
             }

@@ -34,57 +34,61 @@ namespace UI_PetCare
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            bool verifyemail = false;
-            FirebaseResponse response = client.Get("Users/");
-            Dictionary<string, User> result = response.ResultAs<Dictionary<string, User>>();
-            foreach (var get in result)
-            {
-                string usr_email = get.Value.email;
-                if (usr_email == guna2TextBox1.Text)
-                {
-                    verifyemail = true;
-                    ShareVariable.Email = usr_email;
-                    break;
-                }
-            }
-            if (verifyemail == false) MessageBox.Show("Can not find email!");
+            if (string.IsNullOrEmpty(guna2TextBox1.Text)) MessageBox.Show("Please input your Email!");
             else
             {
-                string from, pass, messbody;
-                Random random = new Random();
-                randomCode = (random.Next(999999)).ToString();
-                if (randomCode.Length != 6)
+                bool verifyemail = false;
+                FirebaseResponse response = client.Get("Users/");
+                Dictionary<string, User> result = response.ResultAs<Dictionary<string, User>>();
+                foreach (var get in result)
                 {
-                    randomCode = new string('0', 6 - randomCode.Length) + randomCode;
+                    string usr_email = get.Value.email;
+                    if (usr_email == guna2TextBox1.Text)
+                    {
+                        verifyemail = true;
+                        ShareVariable.Email = usr_email;
+                        break;
+                    }
                 }
-                ShareVariable.OTP = randomCode;
-                MailMessage message = new MailMessage();
-                to = guna2TextBox1.Text.ToString();
-                from = "adoptionpet818@gmail.com";
-                pass = "nqrhurlflgaphvqr";
-                messbody = $"Your Password Reset Code is {randomCode}";
-                message.To.Add(to);
-                message.From = new MailAddress(from);
-                message.Body = messbody;
-                message.Subject = "Password Reset Code";
-                SmtpClient smtp = new SmtpClient("smtp.gmail.com");
-                smtp.EnableSsl = true;
-                smtp.Port = 587;
-                smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
-                smtp.Credentials = new NetworkCredential(from, pass);
-                try
+                if (verifyemail == false) MessageBox.Show("Can not find email!");
+                else
                 {
-                    smtp.Send(message);
-                    MessageBox.Show("Code Successfully Sent");
-                    this.Hide();
-                    Form_Verify form_Verify = new Form_Verify();
-                    form_Verify.ShowDialog();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+                    string from, pass, messbody;
+                    Random random = new Random();
+                    randomCode = (random.Next(999999)).ToString();
+                    if (randomCode.Length != 6)
+                    {
+                        randomCode = new string('0', 6 - randomCode.Length) + randomCode;
+                    }
+                    ShareVariable.OTP = randomCode;
+                    MailMessage message = new MailMessage();
+                    to = guna2TextBox1.Text.ToString();
+                    from = "adoptionpet818@gmail.com";
+                    pass = "nqrhurlflgaphvqr";
+                    messbody = $"Your Password Reset Code is {randomCode}";
+                    message.To.Add(to);
+                    message.From = new MailAddress(from);
+                    message.Body = messbody;
+                    message.Subject = "Password Reset Code";
+                    SmtpClient smtp = new SmtpClient("smtp.gmail.com");
+                    smtp.EnableSsl = true;
+                    smtp.Port = 587;
+                    smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                    smtp.Credentials = new NetworkCredential(from, pass);
+                    try
+                    {
+                        smtp.Send(message);
+                        MessageBox.Show("Code Successfully Sent");
+                        this.Hide();
+                        Form_Verify form_Verify = new Form_Verify();
+                        form_Verify.ShowDialog();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
 
+                }
             }
                    
         }

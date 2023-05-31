@@ -20,17 +20,22 @@ namespace UI_PetCare
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            if(ShareVariable.OTP == guna2TextBox2.Text.ToString())
-            {
-                Form_ResetPass rp = new Form_ResetPass();
-                this.Hide();
-                rp.ShowDialog();
-
-            }
+            if (string.IsNullOrEmpty(guna2TextBox2.Text)) MessageBox.Show("Please input your code!");
             else
             {
-                MessageBox.Show("Your code is wrong!");
+                if(ShareVariable.OTP == guna2TextBox2.Text.ToString())
+                {
+                    Form_ResetPass rp = new Form_ResetPass();
+                    this.Hide();
+                    rp.ShowDialog();
+
+                }
+                else
+                {
+                    MessageBox.Show("Your code is wrong!");
+                }
             }
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
