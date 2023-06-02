@@ -64,11 +64,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adopt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adopt.designer.cs">
+      <DependentUpon>adopt.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Verify.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form_Verify.Designer.cs">
       <DependentUpon>Form_Verify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="post.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="post.designer.cs">
+      <DependentUpon>post.cs</DependentUpon>
+    </Compile>
+    <Compile Include="setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setting.designer.cs">
+      <DependentUpon>setting.cs</DependentUpon>
     </Compile>
     <Compile Include="ShareVariable.cs" />
     <Compile Include="fLogin.cs">
@@ -101,12 +119,6 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Adopt.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_Adopt.Designer.cs">
-      <DependentUpon>Form_Adopt.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form_Register.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +128,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />
+    <EmbeddedResource Include="adopt.resx">
+      <DependentUpon>adopt.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,14 +146,14 @@
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Adopt.resx">
-      <DependentUpon>Form_Adopt.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form_Register.resx">
       <DependentUpon>Form_Register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Verify.resx">
       <DependentUpon>Form_Verify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="post.resx">
+      <DependentUpon>post.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -149,6 +164,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="setting.resx">
+      <DependentUpon>setting.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

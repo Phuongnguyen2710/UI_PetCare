@@ -38,7 +38,6 @@ E:\PetAdoption\UI_PetCare\obj\Debug\UI_PetCare.Form_ResetPass.resources
 E:\PetAdoption\UI_PetCare\obj\Debug\UI_PetCare.Form_FgtPass.resources
 E:\PetAdoption\UI_PetCare\obj\Debug\UI_PetCare.Form2.resources
 E:\PetAdoption\UI_PetCare\obj\Debug\UI_PetCare.Form3.resources
-E:\PetAdoption\UI_PetCare\obj\Debug\UI_PetCare.Form_Adopt.resources
 E:\PetAdoption\UI_PetCare\obj\Debug\UI_PetCare.Form_Register.resources
 E:\PetAdoption\UI_PetCare\obj\Debug\UI_PetCare.Properties.Resources.resources
 E:\PetAdoption\UI_PetCare\obj\Debug\UI_PetCare.csproj.GenerateResource.cache
@@ -47,3 +46,6 @@ E:\PetAdoption\UI_PetCare\obj\Debug\UI_PetCare.csproj.CopyComplete
 E:\PetAdoption\UI_PetCare\obj\Debug\UI_PetCare.exe
 E:\PetAdoption\UI_PetCare\obj\Debug\UI_PetCare.pdb
 E:\PetAdoption\UI_PetCare\obj\Debug\UI_PetCare.Form_Verify.resources
+E:\PetAdoption\UI_PetCare\obj\Debug\UI_PetCare.adopt.resources
+E:\PetAdoption\UI_PetCare\obj\Debug\UI_PetCare.post.resources
+E:\PetAdoption\UI_PetCare\obj\Debug\UI_PetCare.setting.resources

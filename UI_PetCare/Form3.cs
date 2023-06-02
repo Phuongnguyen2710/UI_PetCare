@@ -50,7 +50,7 @@ namespace UI_PetCare
             int y = 64;
             panel1.Location = new Point(x, y);
 
-            OpenChildForm(new Form_Adopt());
+      
         }
 
         private void label5_Click(object sender, EventArgs e)
