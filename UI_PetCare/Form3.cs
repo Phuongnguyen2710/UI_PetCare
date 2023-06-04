@@ -45,24 +45,20 @@ namespace UI_PetCare
         }
 
         private void label4_Click(object sender, EventArgs e)
-        {
-            int x = 477; // 477, 64
-            int y = 64;
-            panel1.Location = new Point(x, y);
-
-      
+        {   
+            panel1.Location = new Point(350, 54); 
         }
 
         private void label5_Click(object sender, EventArgs e)
         {
-            //623, 64
-            panel1.Location = new Point(623, 64);
+            panel1.Location = new Point(465, 54);
         }
 
         private void label6_Click(object sender, EventArgs e)
         {
-            //797, 64
-            panel1.Location = new Point(791, 64);
+            panel1.Location = new Point(569, 54);
+            OpenChildForm(new post());
+
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -79,11 +75,15 @@ namespace UI_PetCare
 
         private void label3_Click(object sender, EventArgs e)
         {
-            int x = 306; // 306, 65
-            int y = 65;
-            panel1.Location = new Point(x, y);
 
-            
+            panel1.Location = new Point(228, 54);
+            panel2.Controls.Clear();
+
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

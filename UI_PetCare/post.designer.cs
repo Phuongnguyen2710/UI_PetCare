@@ -30,26 +30,27 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(post));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox8 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.EmailTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.NameClientTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PetSexTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PetColorTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PetSubtypeTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PetNameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PetDofTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PhoneTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PostButton = new Guna.UI2.WinForms.Guna2Button();
+            this.btt_Click = new Guna.UI2.WinForms.Guna2Button();
+            this.picturepet = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picturepet)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1711, 1206);
+            this.pictureBox1.Location = new System.Drawing.Point(1516, 1090);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(106, 110);
@@ -57,247 +58,277 @@
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
-            // guna2TextBox1
+            // EmailTextBox
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(1112, 672);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(374, 63);
-            this.guna2TextBox1.TabIndex = 11;
-            this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
+            this.EmailTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.EmailTextBox.BackColor = System.Drawing.Color.Red;
+            this.EmailTextBox.BorderColor = System.Drawing.Color.Red;
+            this.EmailTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.EmailTextBox.DefaultText = "";
+            this.EmailTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.EmailTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.EmailTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.EmailTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.EmailTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.EmailTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmailTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.EmailTextBox.Location = new System.Drawing.Point(861, 467);
+            this.EmailTextBox.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.EmailTextBox.Name = "EmailTextBox";
+            this.EmailTextBox.PasswordChar = '\0';
+            this.EmailTextBox.PlaceholderForeColor = System.Drawing.Color.IndianRed;
+            this.EmailTextBox.PlaceholderText = "Enter Email";
+            this.EmailTextBox.SelectedText = "";
+            this.EmailTextBox.Size = new System.Drawing.Size(271, 41);
+            this.EmailTextBox.TabIndex = 11;
             // 
-            // guna2TextBox2
+            // NameClientTextBox
             // 
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(1112, 536);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(374, 63);
-            this.guna2TextBox2.TabIndex = 12;
-            this.guna2TextBox2.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
+            this.NameClientTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.NameClientTextBox.BackColor = System.Drawing.Color.Red;
+            this.NameClientTextBox.BorderColor = System.Drawing.Color.Red;
+            this.NameClientTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.NameClientTextBox.DefaultText = "";
+            this.NameClientTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.NameClientTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.NameClientTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.NameClientTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.NameClientTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.NameClientTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameClientTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.NameClientTextBox.Location = new System.Drawing.Point(861, 386);
+            this.NameClientTextBox.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.NameClientTextBox.Name = "NameClientTextBox";
+            this.NameClientTextBox.PasswordChar = '\0';
+            this.NameClientTextBox.PlaceholderForeColor = System.Drawing.Color.IndianRed;
+            this.NameClientTextBox.PlaceholderText = "Enter Name Client";
+            this.NameClientTextBox.SelectedText = "";
+            this.NameClientTextBox.Size = new System.Drawing.Size(271, 41);
+            this.NameClientTextBox.TabIndex = 12;
             // 
-            // guna2TextBox3
+            // PetSexTextBox
             // 
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(1112, 386);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(374, 63);
-            this.guna2TextBox3.TabIndex = 13;
-            this.guna2TextBox3.TextChanged += new System.EventHandler(this.guna2TextBox3_TextChanged);
+            this.PetSexTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PetSexTextBox.BackColor = System.Drawing.Color.Red;
+            this.PetSexTextBox.BorderColor = System.Drawing.Color.Red;
+            this.PetSexTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PetSexTextBox.DefaultText = "";
+            this.PetSexTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PetSexTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PetSexTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PetSexTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PetSexTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PetSexTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.PetSexTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PetSexTextBox.Location = new System.Drawing.Point(861, 304);
+            this.PetSexTextBox.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.PetSexTextBox.Name = "PetSexTextBox";
+            this.PetSexTextBox.PasswordChar = '\0';
+            this.PetSexTextBox.PlaceholderForeColor = System.Drawing.Color.IndianRed;
+            this.PetSexTextBox.PlaceholderText = "Enter Pet Sex";
+            this.PetSexTextBox.SelectedText = "";
+            this.PetSexTextBox.Size = new System.Drawing.Size(271, 41);
+            this.PetSexTextBox.TabIndex = 13;
             // 
-            // guna2TextBox4
+            // PetColorTextBox
             // 
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Location = new System.Drawing.Point(677, 672);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(374, 63);
-            this.guna2TextBox4.TabIndex = 14;
-            this.guna2TextBox4.TextChanged += new System.EventHandler(this.guna2TextBox4_TextChanged);
+            this.PetColorTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PetColorTextBox.BackColor = System.Drawing.Color.Red;
+            this.PetColorTextBox.BorderColor = System.Drawing.Color.Red;
+            this.PetColorTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PetColorTextBox.DefaultText = "";
+            this.PetColorTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PetColorTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PetColorTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PetColorTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PetColorTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PetColorTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PetColorTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PetColorTextBox.Location = new System.Drawing.Point(490, 469);
+            this.PetColorTextBox.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.PetColorTextBox.Name = "PetColorTextBox";
+            this.PetColorTextBox.PasswordChar = '\0';
+            this.PetColorTextBox.PlaceholderForeColor = System.Drawing.Color.IndianRed;
+            this.PetColorTextBox.PlaceholderText = "Enter Pet Color";
+            this.PetColorTextBox.SelectedText = "";
+            this.PetColorTextBox.Size = new System.Drawing.Size(271, 41);
+            this.PetColorTextBox.TabIndex = 14;
             // 
-            // guna2TextBox5
+            // PetSubtypeTextBox
             // 
-            this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox5.DefaultText = "";
-            this.guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.Location = new System.Drawing.Point(677, 536);
-            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
-            this.guna2TextBox5.Name = "guna2TextBox5";
-            this.guna2TextBox5.PasswordChar = '\0';
-            this.guna2TextBox5.PlaceholderText = "";
-            this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.Size = new System.Drawing.Size(374, 64);
-            this.guna2TextBox5.TabIndex = 15;
-            this.guna2TextBox5.TextChanged += new System.EventHandler(this.guna2TextBox5_TextChanged);
+            this.PetSubtypeTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PetSubtypeTextBox.BackColor = System.Drawing.Color.Red;
+            this.PetSubtypeTextBox.BorderColor = System.Drawing.Color.Red;
+            this.PetSubtypeTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PetSubtypeTextBox.DefaultText = "";
+            this.PetSubtypeTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PetSubtypeTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PetSubtypeTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PetSubtypeTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PetSubtypeTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PetSubtypeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PetSubtypeTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PetSubtypeTextBox.Location = new System.Drawing.Point(490, 386);
+            this.PetSubtypeTextBox.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.PetSubtypeTextBox.Name = "PetSubtypeTextBox";
+            this.PetSubtypeTextBox.PasswordChar = '\0';
+            this.PetSubtypeTextBox.PlaceholderForeColor = System.Drawing.Color.IndianRed;
+            this.PetSubtypeTextBox.PlaceholderText = "Enter Pet Subtype";
+            this.PetSubtypeTextBox.SelectedText = "";
+            this.PetSubtypeTextBox.Size = new System.Drawing.Size(271, 42);
+            this.PetSubtypeTextBox.TabIndex = 15;
             // 
-            // guna2TextBox6
+            // PetNameTextBox
             // 
-            this.guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox6.DefaultText = "";
-            this.guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.Location = new System.Drawing.Point(677, 385);
-            this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
-            this.guna2TextBox6.Name = "guna2TextBox6";
-            this.guna2TextBox6.PasswordChar = '\0';
-            this.guna2TextBox6.PlaceholderText = "";
-            this.guna2TextBox6.SelectedText = "";
-            this.guna2TextBox6.Size = new System.Drawing.Size(374, 64);
-            this.guna2TextBox6.TabIndex = 16;
-            this.guna2TextBox6.TextChanged += new System.EventHandler(this.guna2TextBox6_TextChanged);
+            this.PetNameTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PetNameTextBox.BackColor = System.Drawing.Color.Red;
+            this.PetNameTextBox.BorderColor = System.Drawing.Color.Red;
+            this.PetNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PetNameTextBox.DefaultText = "";
+            this.PetNameTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PetNameTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PetNameTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PetNameTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PetNameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PetNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PetNameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PetNameTextBox.Location = new System.Drawing.Point(490, 304);
+            this.PetNameTextBox.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.PetNameTextBox.Name = "PetNameTextBox";
+            this.PetNameTextBox.PasswordChar = '\0';
+            this.PetNameTextBox.PlaceholderForeColor = System.Drawing.Color.IndianRed;
+            this.PetNameTextBox.PlaceholderText = "Enter Pet Name";
+            this.PetNameTextBox.SelectedText = "";
+            this.PetNameTextBox.Size = new System.Drawing.Size(271, 42);
+            this.PetNameTextBox.TabIndex = 16;
             // 
-            // guna2TextBox7
+            // PetDofTextBox
             // 
-            this.guna2TextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox7.DefaultText = "";
-            this.guna2TextBox7.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox7.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.Location = new System.Drawing.Point(677, 822);
-            this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
-            this.guna2TextBox7.Name = "guna2TextBox7";
-            this.guna2TextBox7.PasswordChar = '\0';
-            this.guna2TextBox7.PlaceholderText = "";
-            this.guna2TextBox7.SelectedText = "";
-            this.guna2TextBox7.Size = new System.Drawing.Size(374, 63);
-            this.guna2TextBox7.TabIndex = 18;
-            this.guna2TextBox7.TextChanged += new System.EventHandler(this.guna2TextBox7_TextChanged);
+            this.PetDofTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PetDofTextBox.BorderColor = System.Drawing.Color.Red;
+            this.PetDofTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PetDofTextBox.DefaultText = "";
+            this.PetDofTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PetDofTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PetDofTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PetDofTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PetDofTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PetDofTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PetDofTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PetDofTextBox.Location = new System.Drawing.Point(490, 550);
+            this.PetDofTextBox.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.PetDofTextBox.Name = "PetDofTextBox";
+            this.PetDofTextBox.PasswordChar = '\0';
+            this.PetDofTextBox.PlaceholderForeColor = System.Drawing.Color.IndianRed;
+            this.PetDofTextBox.PlaceholderText = "Enter Date Of Birth";
+            this.PetDofTextBox.SelectedText = "";
+            this.PetDofTextBox.Size = new System.Drawing.Size(271, 41);
+            this.PetDofTextBox.TabIndex = 18;
             // 
-            // guna2TextBox8
+            // PhoneTextBox
             // 
-            this.guna2TextBox8.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox8.DefaultText = "";
-            this.guna2TextBox8.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox8.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox8.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox8.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox8.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox8.Location = new System.Drawing.Point(1112, 822);
-            this.guna2TextBox8.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
-            this.guna2TextBox8.Name = "guna2TextBox8";
-            this.guna2TextBox8.PasswordChar = '\0';
-            this.guna2TextBox8.PlaceholderText = "";
-            this.guna2TextBox8.SelectedText = "";
-            this.guna2TextBox8.Size = new System.Drawing.Size(374, 63);
-            this.guna2TextBox8.TabIndex = 17;
-            this.guna2TextBox8.TextChanged += new System.EventHandler(this.guna2TextBox8_TextChanged);
+            this.PhoneTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PhoneTextBox.BorderColor = System.Drawing.Color.Red;
+            this.PhoneTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PhoneTextBox.DefaultText = "";
+            this.PhoneTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PhoneTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PhoneTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PhoneTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PhoneTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PhoneTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhoneTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PhoneTextBox.Location = new System.Drawing.Point(861, 548);
+            this.PhoneTextBox.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.PhoneTextBox.Name = "PhoneTextBox";
+            this.PhoneTextBox.PasswordChar = '\0';
+            this.PhoneTextBox.PlaceholderForeColor = System.Drawing.Color.IndianRed;
+            this.PhoneTextBox.PlaceholderText = "Enter Phone";
+            this.PhoneTextBox.SelectedText = "";
+            this.PhoneTextBox.Size = new System.Drawing.Size(271, 41);
+            this.PhoneTextBox.TabIndex = 17;
             // 
-            // guna2Button1
+            // PostButton
             // 
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Montserrat Black", 15.85714F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Location = new System.Drawing.Point(981, 970);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(226, 109);
-            this.guna2Button1.TabIndex = 19;
-            this.guna2Button1.Text = "POST";
+            this.PostButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PostButton.BackColor = System.Drawing.Color.Transparent;
+            this.PostButton.BorderRadius = 10;
+            this.PostButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.PostButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.PostButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.PostButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.PostButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.PostButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.85714F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PostButton.ForeColor = System.Drawing.Color.Black;
+            this.PostButton.Location = new System.Drawing.Point(718, 656);
+            this.PostButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.PostButton.Name = "PostButton";
+            this.PostButton.Size = new System.Drawing.Size(191, 70);
+            this.PostButton.TabIndex = 19;
+            this.PostButton.Text = "POST";
+            this.PostButton.Click += new System.EventHandler(this.PostButton_Click);
             // 
-            // guna2Button2
+            // btt_Click
             // 
-            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.BorderRadius = 10;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.guna2Button2.Font = new System.Drawing.Font("UTM Avo", 14.14286F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button2.Location = new System.Drawing.Point(221, 995);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(226, 70);
-            this.guna2Button2.TabIndex = 20;
-            this.guna2Button2.Text = "Upload";
+            this.btt_Click.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btt_Click.BackColor = System.Drawing.Color.Transparent;
+            this.btt_Click.BorderRadius = 10;
+            this.btt_Click.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btt_Click.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btt_Click.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btt_Click.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btt_Click.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btt_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.14286F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btt_Click.ForeColor = System.Drawing.Color.Black;
+            this.btt_Click.Location = new System.Drawing.Point(148, 671);
+            this.btt_Click.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btt_Click.Name = "btt_Click";
+            this.btt_Click.Size = new System.Drawing.Size(201, 55);
+            this.btt_Click.TabIndex = 20;
+            this.btt_Click.Text = "Upload";
+            this.btt_Click.Click += new System.EventHandler(this.btt_Click_Click);
             // 
-            // pictureBox5
+            // picturepet
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(1567, 995);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(89, 87);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 21;
-            this.pictureBox5.TabStop = false;
+            this.picturepet.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picturepet.ImageRotate = 0F;
+            this.picturepet.Location = new System.Drawing.Point(74, 233);
+            this.picturepet.Name = "picturepet";
+            this.picturepet.Size = new System.Drawing.Size(351, 425);
+            this.picturepet.TabIndex = 22;
+            this.picturepet.TabStop = false;
             // 
             // post
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Red;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1669, 1092);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.guna2Button2);
-            this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.guna2TextBox7);
-            this.Controls.Add(this.guna2TextBox8);
-            this.Controls.Add(this.guna2TextBox6);
-            this.Controls.Add(this.guna2TextBox5);
-            this.Controls.Add(this.guna2TextBox4);
-            this.Controls.Add(this.guna2TextBox3);
-            this.Controls.Add(this.guna2TextBox2);
-            this.Controls.Add(this.guna2TextBox1);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1279, 822);
+            this.Controls.Add(this.picturepet);
+            this.Controls.Add(this.btt_Click);
+            this.Controls.Add(this.PostButton);
+            this.Controls.Add(this.PetDofTextBox);
+            this.Controls.Add(this.PhoneTextBox);
+            this.Controls.Add(this.PetNameTextBox);
+            this.Controls.Add(this.PetSubtypeTextBox);
+            this.Controls.Add(this.PetColorTextBox);
+            this.Controls.Add(this.PetSexTextBox);
+            this.Controls.Add(this.NameClientTextBox);
+            this.Controls.Add(this.EmailTextBox);
             this.Controls.Add(this.pictureBox1);
-            this.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DoubleBuffered = true;
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.Location = new System.Drawing.Point(3, 77);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "post";
             this.Text = "post";
             this.Load += new System.EventHandler(this.post_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picturepet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -305,16 +336,16 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox6;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox8;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private Guna.UI2.WinForms.Guna2TextBox EmailTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox NameClientTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox PetSexTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox PetColorTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox PetSubtypeTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox PetNameTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox PetDofTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox PhoneTextBox;
+        private Guna.UI2.WinForms.Guna2Button PostButton;
+        private Guna.UI2.WinForms.Guna2Button btt_Click;
+        private Guna.UI2.WinForms.Guna2PictureBox picturepet;
     }
 }

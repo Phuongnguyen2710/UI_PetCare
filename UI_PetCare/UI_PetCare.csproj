@@ -82,6 +82,7 @@
     <Compile Include="post.designer.cs">
       <DependentUpon>post.cs</DependentUpon>
     </Compile>
+    <Compile Include="PostData.cs" />
     <Compile Include="setting.cs">
       <SubType>Form</SubType>
     </Compile>

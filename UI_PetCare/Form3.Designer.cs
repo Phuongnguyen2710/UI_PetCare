@@ -36,10 +36,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.panel1 = new Guna.UI2.WinForms.Guna2Panel();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -86,8 +86,8 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("UTM Avo", 18F);
-            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(299, 21);
+            this.label3.ForeColor = System.Drawing.Color.DeepPink;
+            this.label3.Location = new System.Drawing.Point(299, 19);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(105, 41);
             this.label3.TabIndex = 4;
@@ -99,8 +99,8 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("UTM Avo", 18F);
-            this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.Location = new System.Drawing.Point(466, 21);
+            this.label4.ForeColor = System.Drawing.Color.DeepPink;
+            this.label4.Location = new System.Drawing.Point(466, 19);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(111, 41);
             this.label4.TabIndex = 5;
@@ -112,8 +112,8 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("UTM Avo", 18F);
-            this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(635, 21);
+            this.label5.ForeColor = System.Drawing.Color.DeepPink;
+            this.label5.Location = new System.Drawing.Point(634, 19);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(78, 41);
             this.label5.TabIndex = 6;
@@ -125,21 +125,13 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("UTM Avo", 18F);
-            this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label6.Location = new System.Drawing.Point(797, 21);
+            this.label6.ForeColor = System.Drawing.Color.DeepPink;
+            this.label6.Location = new System.Drawing.Point(776, 19);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(78, 41);
             this.label6.TabIndex = 7;
             this.label6.Text = "Post";
             this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.HotPink;
-            this.panel1.Location = new System.Drawing.Point(306, 65);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(87, 11);
-            this.panel1.TabIndex = 8;
             // 
             // pictureBox1
             // 
@@ -155,11 +147,12 @@
             // 
             // panel2
             // 
+            this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Location = new System.Drawing.Point(3, 77);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1231, 630);
-            this.panel2.TabIndex = 10;
+            this.panel2.TabIndex = 0;
             // 
             // guna2TextBox1
             // 
@@ -185,6 +178,17 @@
             this.guna2TextBox1.TabIndex = 11;
             this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.HotPink;
+            this.panel1.BorderColor = System.Drawing.Color.HotPink;
+            this.panel1.BorderRadius = 20;
+            this.panel1.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.panel1.Location = new System.Drawing.Point(299, 63);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(105, 10);
+            this.panel1.TabIndex = 12;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -192,11 +196,11 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1231, 771);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -208,6 +212,7 @@
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Adopt";
+            this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -224,9 +229,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2Panel panel1;
     }
 }
