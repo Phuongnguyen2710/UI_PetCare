@@ -27,7 +27,6 @@ namespace UI_PetCare
             AuthSecret = "BFp0TAb8sUuV5tkaRZDWlk5NzOdrFLJWr2NkqPxt",
             BasePath = "https://registerandlogin-31e76-default-rtdb.firebaseio.com/"
         };
-
         IFirebaseClient client;
 
 

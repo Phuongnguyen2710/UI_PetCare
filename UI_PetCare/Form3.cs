@@ -85,5 +85,10 @@ namespace UI_PetCare
         {
 
         }
+
+        private void guna2CirclePictureBox2_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Form_ChatBox());
+        }
     }
 }

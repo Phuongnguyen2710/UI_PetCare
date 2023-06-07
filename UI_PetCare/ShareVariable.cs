@@ -10,5 +10,6 @@ namespace UI_PetCare
     {
         public static string Email = "";
         public static string OTP = "";
+        public static string Username = "";
     }
 }

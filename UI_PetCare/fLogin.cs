@@ -16,7 +16,7 @@ using System.Security.Cryptography;
 namespace UI_PetCare
 {
     public partial class fLogin : Form
-    {
+    { 
         public fLogin() => InitializeComponent();
 
         //Configure FirebaseConfig
@@ -67,6 +67,7 @@ namespace UI_PetCare
                     if (login)
                     {
                         MessageBox.Show("Welcome " + guna2TextBox1.Text);
+                        ShareVariable.Username = guna2TextBox1.Text;
                         //Declare some public string so you can pass the data to the another Frame.
                         this.Hide();
                         Form2 f2 = new Form2();

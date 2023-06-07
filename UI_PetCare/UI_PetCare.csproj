@@ -70,11 +70,30 @@
     <Compile Include="adopt.designer.cs">
       <DependentUpon>adopt.cs</DependentUpon>
     </Compile>
+    <Compile Include="Chat.cs" />
+    <Compile Include="Form_ChatBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ChatBox.designer.cs">
+      <DependentUpon>Form_ChatBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Verify.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form_Verify.Designer.cs">
       <DependentUpon>Form_Verify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InComming.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InComming.Designer.cs">
+      <DependentUpon>InComming.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutGoing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutGoing.Designer.cs">
+      <DependentUpon>OutGoing.cs</DependentUpon>
     </Compile>
     <Compile Include="post.cs">
       <SubType>Form</SubType>
@@ -135,6 +154,9 @@
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_ChatBox.resx">
+      <DependentUpon>Form_ChatBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_ResetPass.resx">
       <DependentUpon>Form_ResetPass.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +174,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Verify.resx">
       <DependentUpon>Form_Verify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InComming.resx">
+      <DependentUpon>InComming.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutGoing.resx">
+      <DependentUpon>OutGoing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="post.resx">
       <DependentUpon>post.cs</DependentUpon>
