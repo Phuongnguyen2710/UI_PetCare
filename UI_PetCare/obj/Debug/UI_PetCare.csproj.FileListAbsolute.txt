@@ -102,7 +102,6 @@ E:\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.Form2.resources
 E:\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.Form3.resources
 E:\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.Form_Register.resources
 E:\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.Form_Verify.resources
-E:\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.post.resources
 E:\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.Properties.Resources.resources
 E:\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.setting.resources
 E:\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.csproj.GenerateResource.cache
@@ -113,3 +112,4 @@ E:\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.pdb
 E:\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.Form_ChatBox.resources
 E:\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.InComming.resources
 E:\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.OutGoing.resources
+E:\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.Form_post.resources

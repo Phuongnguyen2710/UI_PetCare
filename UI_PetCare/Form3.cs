@@ -57,7 +57,7 @@ namespace UI_PetCare
         private void label6_Click(object sender, EventArgs e)
         {
             panel1.Location = new Point(569, 54);
-            OpenChildForm(new post());
+            OpenChildForm(new Form_post());
 
         }
 

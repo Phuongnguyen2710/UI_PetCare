@@ -35,7 +35,9 @@ namespace UI_PetCare
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            timer.Start();
+            timer.Start();   
+            guna2TextBox1.SelectionStart = 0;
+            guna2TextBox1.SelectionLength = 0;
         }
     }
 }

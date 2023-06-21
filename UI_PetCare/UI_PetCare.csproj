@@ -71,11 +71,23 @@
       <DependentUpon>adopt.cs</DependentUpon>
     </Compile>
     <Compile Include="Chat.cs" />
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_ChatBox.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form_ChatBox.designer.cs">
       <DependentUpon>Form_ChatBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_post.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_post.designer.cs">
+      <DependentUpon>Form_post.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_Verify.cs">
       <SubType>Form</SubType>
@@ -94,12 +106,6 @@
     </Compile>
     <Compile Include="OutGoing.Designer.cs">
       <DependentUpon>OutGoing.cs</DependentUpon>
-    </Compile>
-    <Compile Include="post.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="post.designer.cs">
-      <DependentUpon>post.cs</DependentUpon>
     </Compile>
     <Compile Include="PostData.cs" />
     <Compile Include="setting.cs">
@@ -127,12 +133,6 @@
     <Compile Include="Form_FgtPass.Designer.cs">
       <DependentUpon>Form_FgtPass.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,17 +154,20 @@
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_ChatBox.resx">
       <DependentUpon>Form_ChatBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_post.resx">
+      <DependentUpon>Form_post.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_ResetPass.resx">
       <DependentUpon>Form_ResetPass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_FgtPass.resx">
       <DependentUpon>Form_FgtPass.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
@@ -180,9 +183,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OutGoing.resx">
       <DependentUpon>OutGoing.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="post.resx">
-      <DependentUpon>post.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
