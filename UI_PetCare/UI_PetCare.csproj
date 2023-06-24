@@ -71,6 +71,7 @@
       <DependentUpon>adopt.cs</DependentUpon>
     </Compile>
     <Compile Include="Chat.cs" />
+    <Compile Include="CounterClass.cs" />
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +108,7 @@
     <Compile Include="OutGoing.Designer.cs">
       <DependentUpon>OutGoing.cs</DependentUpon>
     </Compile>
+    <Compile Include="pet.cs" />
     <Compile Include="PostData.cs" />
     <Compile Include="setting.cs">
       <SubType>Form</SubType>

@@ -45,17 +45,17 @@
             // 
             // picturepet
             // 
-            this.picturepet.Location = new System.Drawing.Point(63, 172);
+            this.picturepet.Location = new System.Drawing.Point(79, 252);
+            this.picturepet.Margin = new System.Windows.Forms.Padding(4);
             this.picturepet.Name = "picturepet";
-            this.picturepet.Size = new System.Drawing.Size(354, 340);
+            this.picturepet.Size = new System.Drawing.Size(498, 522);
             this.picturepet.TabIndex = 0;
             this.picturepet.TabStop = false;
             // 
             // PetNameTextBox
             // 
-            this.PetNameTextBox.BorderColor = System.Drawing.Color.Fuchsia;
+            this.PetNameTextBox.BorderColor = System.Drawing.Color.DarkSlateGray;
             this.PetNameTextBox.BorderRadius = 10;
-            this.PetNameTextBox.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             this.PetNameTextBox.BorderThickness = 2;
             this.PetNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.PetNameTextBox.DefaultText = "";
@@ -66,21 +66,20 @@
             this.PetNameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PetNameTextBox.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PetNameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PetNameTextBox.Location = new System.Drawing.Point(466, 214);
-            this.PetNameTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.PetNameTextBox.Location = new System.Drawing.Point(652, 345);
+            this.PetNameTextBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.PetNameTextBox.Name = "PetNameTextBox";
             this.PetNameTextBox.PasswordChar = '\0';
             this.PetNameTextBox.PlaceholderForeColor = System.Drawing.Color.Red;
             this.PetNameTextBox.PlaceholderText = "Enter Pet Name";
             this.PetNameTextBox.SelectedText = "";
-            this.PetNameTextBox.Size = new System.Drawing.Size(290, 36);
+            this.PetNameTextBox.Size = new System.Drawing.Size(399, 54);
             this.PetNameTextBox.TabIndex = 1;
             // 
             // PetSexTextBox
             // 
-            this.PetSexTextBox.BorderColor = System.Drawing.Color.Fuchsia;
+            this.PetSexTextBox.BorderColor = System.Drawing.Color.DarkSlateGray;
             this.PetSexTextBox.BorderRadius = 10;
-            this.PetSexTextBox.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             this.PetSexTextBox.BorderThickness = 2;
             this.PetSexTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.PetSexTextBox.DefaultText = "";
@@ -91,21 +90,20 @@
             this.PetSexTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PetSexTextBox.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PetSexTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PetSexTextBox.Location = new System.Drawing.Point(466, 297);
-            this.PetSexTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.PetSexTextBox.Location = new System.Drawing.Point(652, 449);
+            this.PetSexTextBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.PetSexTextBox.Name = "PetSexTextBox";
             this.PetSexTextBox.PasswordChar = '\0';
             this.PetSexTextBox.PlaceholderForeColor = System.Drawing.Color.Red;
             this.PetSexTextBox.PlaceholderText = "Enter Sex";
             this.PetSexTextBox.SelectedText = "";
-            this.PetSexTextBox.Size = new System.Drawing.Size(290, 36);
+            this.PetSexTextBox.Size = new System.Drawing.Size(399, 54);
             this.PetSexTextBox.TabIndex = 2;
             // 
             // PetSubtypeTextBox
             // 
-            this.PetSubtypeTextBox.BorderColor = System.Drawing.Color.Fuchsia;
+            this.PetSubtypeTextBox.BorderColor = System.Drawing.Color.DarkSlateGray;
             this.PetSubtypeTextBox.BorderRadius = 10;
-            this.PetSubtypeTextBox.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             this.PetSubtypeTextBox.BorderThickness = 2;
             this.PetSubtypeTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.PetSubtypeTextBox.DefaultText = "";
@@ -116,21 +114,20 @@
             this.PetSubtypeTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PetSubtypeTextBox.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PetSubtypeTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PetSubtypeTextBox.Location = new System.Drawing.Point(466, 370);
-            this.PetSubtypeTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.PetSubtypeTextBox.Location = new System.Drawing.Point(652, 550);
+            this.PetSubtypeTextBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.PetSubtypeTextBox.Name = "PetSubtypeTextBox";
             this.PetSubtypeTextBox.PasswordChar = '\0';
             this.PetSubtypeTextBox.PlaceholderForeColor = System.Drawing.Color.Red;
             this.PetSubtypeTextBox.PlaceholderText = "Enter SubType";
             this.PetSubtypeTextBox.SelectedText = "";
-            this.PetSubtypeTextBox.Size = new System.Drawing.Size(290, 36);
+            this.PetSubtypeTextBox.Size = new System.Drawing.Size(399, 54);
             this.PetSubtypeTextBox.TabIndex = 3;
             // 
             // PetDofTextBox
             // 
-            this.PetDofTextBox.BorderColor = System.Drawing.Color.Fuchsia;
+            this.PetDofTextBox.BorderColor = System.Drawing.Color.DarkSlateGray;
             this.PetDofTextBox.BorderRadius = 10;
-            this.PetDofTextBox.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             this.PetDofTextBox.BorderThickness = 2;
             this.PetDofTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.PetDofTextBox.DefaultText = "";
@@ -141,21 +138,20 @@
             this.PetDofTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PetDofTextBox.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PetDofTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PetDofTextBox.Location = new System.Drawing.Point(466, 452);
-            this.PetDofTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.PetDofTextBox.Location = new System.Drawing.Point(652, 646);
+            this.PetDofTextBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.PetDofTextBox.Name = "PetDofTextBox";
             this.PetDofTextBox.PasswordChar = '\0';
             this.PetDofTextBox.PlaceholderForeColor = System.Drawing.Color.Red;
             this.PetDofTextBox.PlaceholderText = "Enter Date of Birth";
             this.PetDofTextBox.SelectedText = "";
-            this.PetDofTextBox.Size = new System.Drawing.Size(290, 36);
+            this.PetDofTextBox.Size = new System.Drawing.Size(399, 54);
             this.PetDofTextBox.TabIndex = 4;
             // 
             // NameClientTextBox
             // 
-            this.NameClientTextBox.BorderColor = System.Drawing.Color.Fuchsia;
+            this.NameClientTextBox.BorderColor = System.Drawing.Color.DarkSlateGray;
             this.NameClientTextBox.BorderRadius = 10;
-            this.NameClientTextBox.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             this.NameClientTextBox.BorderThickness = 2;
             this.NameClientTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.NameClientTextBox.DefaultText = "";
@@ -166,21 +162,20 @@
             this.NameClientTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.NameClientTextBox.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameClientTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.NameClientTextBox.Location = new System.Drawing.Point(803, 297);
-            this.NameClientTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.NameClientTextBox.Location = new System.Drawing.Point(1097, 449);
+            this.NameClientTextBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.NameClientTextBox.Name = "NameClientTextBox";
             this.NameClientTextBox.PasswordChar = '\0';
             this.NameClientTextBox.PlaceholderForeColor = System.Drawing.Color.Red;
             this.NameClientTextBox.PlaceholderText = "Enter Name Client";
             this.NameClientTextBox.SelectedText = "";
-            this.NameClientTextBox.Size = new System.Drawing.Size(290, 36);
+            this.NameClientTextBox.Size = new System.Drawing.Size(399, 54);
             this.NameClientTextBox.TabIndex = 5;
             // 
             // EmailTextBox
             // 
-            this.EmailTextBox.BorderColor = System.Drawing.Color.Fuchsia;
+            this.EmailTextBox.BorderColor = System.Drawing.Color.DarkSlateGray;
             this.EmailTextBox.BorderRadius = 10;
-            this.EmailTextBox.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             this.EmailTextBox.BorderThickness = 2;
             this.EmailTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.EmailTextBox.DefaultText = "";
@@ -191,21 +186,20 @@
             this.EmailTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.EmailTextBox.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmailTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.EmailTextBox.Location = new System.Drawing.Point(803, 370);
-            this.EmailTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.EmailTextBox.Location = new System.Drawing.Point(1097, 550);
+            this.EmailTextBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.EmailTextBox.Name = "EmailTextBox";
             this.EmailTextBox.PasswordChar = '\0';
             this.EmailTextBox.PlaceholderForeColor = System.Drawing.Color.Red;
             this.EmailTextBox.PlaceholderText = "Enter Email";
             this.EmailTextBox.SelectedText = "";
-            this.EmailTextBox.Size = new System.Drawing.Size(290, 36);
+            this.EmailTextBox.Size = new System.Drawing.Size(399, 54);
             this.EmailTextBox.TabIndex = 6;
             // 
             // PetColorTextBox
             // 
-            this.PetColorTextBox.BorderColor = System.Drawing.Color.Fuchsia;
+            this.PetColorTextBox.BorderColor = System.Drawing.Color.DarkSlateGray;
             this.PetColorTextBox.BorderRadius = 10;
-            this.PetColorTextBox.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             this.PetColorTextBox.BorderThickness = 2;
             this.PetColorTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.PetColorTextBox.DefaultText = "";
@@ -216,21 +210,20 @@
             this.PetColorTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PetColorTextBox.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PetColorTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PetColorTextBox.Location = new System.Drawing.Point(803, 214);
-            this.PetColorTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.PetColorTextBox.Location = new System.Drawing.Point(1097, 345);
+            this.PetColorTextBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.PetColorTextBox.Name = "PetColorTextBox";
             this.PetColorTextBox.PasswordChar = '\0';
             this.PetColorTextBox.PlaceholderForeColor = System.Drawing.Color.Red;
             this.PetColorTextBox.PlaceholderText = "Enter Color";
             this.PetColorTextBox.SelectedText = "";
-            this.PetColorTextBox.Size = new System.Drawing.Size(290, 36);
+            this.PetColorTextBox.Size = new System.Drawing.Size(399, 54);
             this.PetColorTextBox.TabIndex = 9;
             // 
             // PhoneTextBox
             // 
-            this.PhoneTextBox.BorderColor = System.Drawing.Color.Fuchsia;
+            this.PhoneTextBox.BorderColor = System.Drawing.Color.DarkSlateGray;
             this.PhoneTextBox.BorderRadius = 10;
-            this.PhoneTextBox.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             this.PhoneTextBox.BorderThickness = 2;
             this.PhoneTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.PhoneTextBox.DefaultText = "";
@@ -241,14 +234,14 @@
             this.PhoneTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PhoneTextBox.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PhoneTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PhoneTextBox.Location = new System.Drawing.Point(803, 452);
-            this.PhoneTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.PhoneTextBox.Location = new System.Drawing.Point(1097, 646);
+            this.PhoneTextBox.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.PhoneTextBox.Name = "PhoneTextBox";
             this.PhoneTextBox.PasswordChar = '\0';
             this.PhoneTextBox.PlaceholderForeColor = System.Drawing.Color.Red;
             this.PhoneTextBox.PlaceholderText = "Enter Phone";
             this.PhoneTextBox.SelectedText = "";
-            this.PhoneTextBox.Size = new System.Drawing.Size(290, 36);
+            this.PhoneTextBox.Size = new System.Drawing.Size(399, 54);
             this.PhoneTextBox.TabIndex = 8;
             // 
             // btt_Click
@@ -262,13 +255,14 @@
             this.btt_Click.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btt_Click.FillColor = System.Drawing.Color.LightPink;
             this.btt_Click.Font = new System.Drawing.Font("UTM Avo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btt_Click.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btt_Click.Location = new System.Drawing.Point(130, 546);
+            this.btt_Click.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btt_Click.Location = new System.Drawing.Point(179, 819);
+            this.btt_Click.Margin = new System.Windows.Forms.Padding(4);
             this.btt_Click.Name = "btt_Click";
             this.btt_Click.PressedColor = System.Drawing.Color.Transparent;
-            this.btt_Click.Size = new System.Drawing.Size(184, 63);
+            this.btt_Click.Size = new System.Drawing.Size(253, 94);
             this.btt_Click.TabIndex = 10;
-            this.btt_Click.Text = "Upload File";
+            this.btt_Click.Text = "Upload";
             this.btt_Click.Click += new System.EventHandler(this.btt_Click_Click);
             // 
             // PostButton
@@ -280,22 +274,23 @@
             this.PostButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.PostButton.FillColor = System.Drawing.Color.LightPink;
             this.PostButton.Font = new System.Drawing.Font("UTM Avo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PostButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.PostButton.Location = new System.Drawing.Point(690, 546);
+            this.PostButton.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.PostButton.Location = new System.Drawing.Point(949, 819);
+            this.PostButton.Margin = new System.Windows.Forms.Padding(4);
             this.PostButton.Name = "PostButton";
             this.PostButton.PressedColor = System.Drawing.Color.Transparent;
-            this.PostButton.Size = new System.Drawing.Size(191, 63);
+            this.PostButton.Size = new System.Drawing.Size(263, 94);
             this.PostButton.TabIndex = 11;
-            this.PostButton.Text = "Post Info";
+            this.PostButton.Text = "POST";
             this.PostButton.Click += new System.EventHandler(this.PostButton_Click);
             // 
             // Form_post
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1231, 630);
+            this.ClientSize = new System.Drawing.Size(1693, 945);
             this.Controls.Add(this.PostButton);
             this.Controls.Add(this.btt_Click);
             this.Controls.Add(this.PetColorTextBox);
@@ -309,6 +304,7 @@
             this.Controls.Add(this.picturepet);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_post";
             this.Text = "Form_post";
             this.Load += new System.EventHandler(this.Form_post_Load);

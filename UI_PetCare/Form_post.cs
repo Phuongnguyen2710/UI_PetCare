@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FireSharp.Config;
 using FireSharp.Interfaces;
+using FireSharp.Response;
 
 namespace UI_PetCare
 {
@@ -19,7 +20,6 @@ namespace UI_PetCare
         {
             InitializeComponent();
         }
-        
         private static Random random = new Random();
         private static List<int> usedIds = new List<int>();
 
@@ -30,12 +30,6 @@ namespace UI_PetCare
             return Convert.ToBase64String(ms.ToArray());
         } //chuyen hinh sang base64
 
-        public static Image Base64StringIntoImage(string str4)
-        {
-            byte[] img = Convert.FromBase64String(str4);
-            MemoryStream ms = new MemoryStream();
-            return Image.FromStream(ms);
-        } //chuyen base64 sang hinh
 
         IFirebaseConfig config = new FirebaseConfig
         {
@@ -81,8 +75,14 @@ namespace UI_PetCare
             }
         }
 
-        private void PostButton_Click(object sender, EventArgs e)
+        private async void PostButton_Click(object sender, EventArgs e)
         {
+            FirebaseResponse resp = await client.GetTaskAsync("Couter/Node");
+            CounterClass get = resp.ResultAs<CounterClass>();
+           
+            DateTime currentDate = DateTime.Now;
+            string dateString = currentDate.ToString("dd/MM/yyyy");
+
             if (string.IsNullOrEmpty(PetNameTextBox.Text) || string.IsNullOrEmpty(PetSubtypeTextBox.Text) ||
             string.IsNullOrEmpty(PetColorTextBox.Text) || string.IsNullOrEmpty(PetDofTextBox.Text) ||
             string.IsNullOrEmpty(PetSexTextBox.Text) || string.IsNullOrEmpty(NameClientTextBox.Text) ||
@@ -92,7 +92,6 @@ namespace UI_PetCare
                 // Check if textbox is Empty
                 MessageBox.Show("Please Put Full Information", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-
             else
             {
                 try
@@ -107,12 +106,21 @@ namespace UI_PetCare
                         NameClient = NameClientTextBox.Text,
                         Email = EmailTextBox.Text,
                         Phone = PhoneTextBox.Text,
+                        DatePost = dateString,
+                        isAdopted = false,
                         imgstr = ImageIntoBase64String(picturepet)
                     };
-                    string Id = Convert.ToString(GenerateUniqueId());
+                    int Id = Convert.ToInt32(get.id) + 1;
+
                     var set = client.Set("Post/" + Id, pd);
                     MessageBox.Show("Post Successfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                    var obj = new CounterClass
+                    {
+                        id = Id.ToString()
+                    };
+
+                    SetResponse response = await client.SetTaskAsync("Couter/Node", obj);
                 }
                 catch (Exception ex)
                 {

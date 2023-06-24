@@ -46,12 +46,14 @@ namespace UI_PetCare
 
         private void label4_Click(object sender, EventArgs e)
         {   
-            panel1.Location = new Point(350, 54); 
+            panel1.Location = new Point(350, 54);
+            OpenChildForm(new adopt());
         }
 
         private void label5_Click(object sender, EventArgs e)
         {
             panel1.Location = new Point(465, 54);
+            
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -63,13 +65,13 @@ namespace UI_PetCare
 
         private void label2_Click(object sender, EventArgs e)
         {
-            label2.Hide();
+            //label2.Hide();
             guna2TextBox1.Focus();
         }
 
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)
         {
-            label2.Hide();
+            //label2.Hide();
             guna2TextBox1.Focus();
         }
 

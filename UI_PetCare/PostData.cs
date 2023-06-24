@@ -18,5 +18,7 @@ namespace UI_PetCare
         public string Email { get; set; }
         public string Phone { get; set; }
         public string imgstr { get; set; }
+        public string DatePost { get; set; }
+        public bool isAdopted { get; set; }
     }
 }
