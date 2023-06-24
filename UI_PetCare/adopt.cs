@@ -90,7 +90,7 @@ namespace UI_PetCare
 
             FirebaseResponse res = await client.UpdateTaskAsync("Post/" + current_num_id.ToString(), postData);
             PostData reusult = res.ResultAs<PostData>();
-            MessageBox.Show("This Pet Adopted", "Congarts");
+            MessageBox.Show("This Pet Adopted", "Congart");
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
