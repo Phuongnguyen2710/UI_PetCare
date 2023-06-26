@@ -29,7 +29,10 @@ namespace UI_PetCare
         {
             timer.Stop();
             this.Hide();
+
             Form3 form3 = new Form3();
+            form3.maskedTextBox1.Text = guna2TextBox1.Text;
+
             form3.Show();
         }
 
@@ -38,6 +41,7 @@ namespace UI_PetCare
             timer.Start();   
             guna2TextBox1.SelectionStart = 0;
             guna2TextBox1.SelectionLength = 0;
+
         }
     }
 }

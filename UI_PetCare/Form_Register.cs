@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -22,6 +23,14 @@ namespace UI_PetCare
             InitializeComponent();
         }
 
+        public static string ImageIntoBase64String(PictureBox pbox)
+        {
+            MemoryStream ms = new MemoryStream();
+            pbox.Image.Save(ms, pbox.Image.RawFormat);
+            return Convert.ToBase64String(ms.ToArray());
+        } //chuyen hinh sang base64
+
+
         IFirebaseConfig config = new FirebaseConfig
         {
             AuthSecret = "BFp0TAb8sUuV5tkaRZDWlk5NzOdrFLJWr2NkqPxt",
@@ -35,7 +44,8 @@ namespace UI_PetCare
             // Register
 
             if (string.IsNullOrEmpty(guna2TextBox1.Text) || string.IsNullOrEmpty(guna2TextBox2.Text)
-                || string.IsNullOrEmpty(guna2TextBox3.Text) || string.IsNullOrEmpty(guna2TextBox4.Text))
+                || string.IsNullOrEmpty(guna2TextBox3.Text) || string.IsNullOrEmpty(guna2TextBox4.Text) 
+                || Avatar.Image == null)
             {
                 //Check all textbox if some are Empty.
                 MessageBox.Show("Please specify all data needed.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -53,6 +63,8 @@ namespace UI_PetCare
                     password = hashPass,
                     email = guna2TextBox3.Text,
                     phone = guna2TextBox4.Text,
+                    location = guna2TextBox5.Text,
+                    avatar = ImageIntoBase64String(Avatar),
 
                 };
 
@@ -99,50 +111,59 @@ namespace UI_PetCare
         private void textBox1_Click(object sender, EventArgs e)
         {
             guna2TextBox1.Focus();
-            textBox1.Hide();
 
         }
 
         private void guna2TextBox1_Click(object sender, EventArgs e)
         {
             guna2TextBox1.Focus();
-            textBox1.Hide();
         }
 
         private void textBox2_Click(object sender, EventArgs e)
         {
             guna2TextBox2.Focus();
-            textBox2.Hide();
         }
 
         private void guna2TextBox2_Click(object sender, EventArgs e)
         {
             guna2TextBox2.Focus();
-            textBox2.Hide();
         }
 
         private void textBox3_Click(object sender, EventArgs e)
         {
             guna2TextBox3.Focus();
-            textBox3.Hide();
+
         }
 
         private void guna2TextBox3_Click(object sender, EventArgs e)
         {
             guna2TextBox3.Focus();
-            textBox3.Hide();
+
         }
 
         private void textBox4_Click(object sender, EventArgs e)
         {
             guna2TextBox4.Focus();
-            textBox4.Hide();
+
         }
 
         private void guna2TextBox4_Click(object sender, EventArgs e)
         {
             guna2TextBox4.Focus();
-            textBox4.Hide();
+
+        }
+
+
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files (*.jpg, *.jpeg, *.png) | *.jpg; *.jpeg; *.png";
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                Avatar.Load(openFileDialog.FileName);
+                Avatar.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
         }
     }
 }

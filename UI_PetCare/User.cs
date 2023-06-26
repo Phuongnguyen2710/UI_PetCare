@@ -13,5 +13,7 @@ namespace UI_PetCare
         public string password { get; set; }
         public string email { get; set; }
         public string phone { get; set; }
+        public string location { get; set; }
+        public string avatar { get; set; }
     }
 }

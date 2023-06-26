@@ -1,8 +1,14 @@
-﻿using System;
+﻿using FireSharp;
+using FireSharp.Config;
+using FireSharp.Interfaces;
+using FireSharp.Response;
+using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +22,24 @@ namespace UI_PetCare
         public Form3()
         {
             InitializeComponent();
+        }
+
+        IFirebaseClient client;
+        //Configure FirebaseConfig
+        IFirebaseConfig config = new FirebaseConfig
+        {
+            AuthSecret = "BFp0TAb8sUuV5tkaRZDWlk5NzOdrFLJWr2NkqPxt",
+            BasePath = "https://registerandlogin-31e76-default-rtdb.firebaseio.com/"
+        };
+
+        public static System.Drawing.Image Base64StringIntoImage(string base64String)
+        {
+            byte[] imgBytes = Convert.FromBase64String(base64String);
+            using (MemoryStream ms = new MemoryStream(imgBytes))
+            {
+                System.Drawing.Image image = System.Drawing.Image.FromStream(ms);
+                return new Bitmap(image);
+            }
         }
 
         private Form CurrentFormChild;
@@ -46,7 +70,7 @@ namespace UI_PetCare
 
         private void label4_Click(object sender, EventArgs e)
         {   
-            panel1.Location = new Point(350, 54);
+            panel1.Location = new Point(370, 54);
             OpenChildForm(new adopt());
         }
 
@@ -58,22 +82,11 @@ namespace UI_PetCare
 
         private void label6_Click(object sender, EventArgs e)
         {
-            panel1.Location = new Point(569, 54);
+            panel1.Location = new Point(610, 54);
             OpenChildForm(new Form_post());
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-            //label2.Hide();
-            guna2TextBox1.Focus();
-        }
-
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
-        {
-            //label2.Hide();
-            guna2TextBox1.Focus();
-        }
 
         private void label3_Click(object sender, EventArgs e)
         {
@@ -83,14 +96,30 @@ namespace UI_PetCare
 
         }
 
-        private void Form3_Load(object sender, EventArgs e)
-        {
 
+
+        private async void Form3_Load(object sender, EventArgs e)
+        {
+            client = new FireSharp.FirebaseClient(config);
+
+            FirebaseResponse response = await client.GetTaskAsync("Users/" + maskedTextBox1.Text);
+            User user = response.ResultAs<User>();
+            if (user.avatar != null)
+            {
+                AvatarPic.Image = Base64StringIntoImage(user.avatar);
+               
+            }
+  
         }
 
         private void guna2CirclePictureBox2_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Form_ChatBox());
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForm(new setting());
         }
     }
 }

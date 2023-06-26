@@ -12,6 +12,7 @@ using FireSharp.Config;
 using FireSharp.Interfaces;
 using FireSharp.Response;
 using System.Security.Cryptography;
+using System.IO;
 
 namespace UI_PetCare
 {
@@ -28,6 +29,9 @@ namespace UI_PetCare
 
         //Firebase Client
         IFirebaseClient client;
+        string avatarimg = "";//lay avater tu firebase
+
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -56,7 +60,7 @@ namespace UI_PetCare
                     {
                         string user_result = get.Value.username;
                         string pass_result = get.Value.password;
-
+                        avatarimg = get.Value.avatar;
                         string hashPass = ComputeSha256Hash(guna2TextBox2.Text);
                         if (guna2TextBox1.Text == user_result && hashPass == pass_result)
                         {
@@ -73,6 +77,7 @@ namespace UI_PetCare
                         Form2 f2 = new Form2();
                         f2.guna2TextBox1.Text = this.guna2TextBox1.Text;
                         f2.ShowDialog();
+
                     }
                     else MessageBox.Show("Incorrect username or password.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

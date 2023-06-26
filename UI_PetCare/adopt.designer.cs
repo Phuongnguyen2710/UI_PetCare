@@ -50,10 +50,11 @@
             this.guna2ImageButton2.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton2.ImageRotate = 0F;
             this.guna2ImageButton2.ImageSize = new System.Drawing.Size(120, 120);
-            this.guna2ImageButton2.Location = new System.Drawing.Point(1538, 420);
+            this.guna2ImageButton2.Location = new System.Drawing.Point(1119, 280);
+            this.guna2ImageButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2ImageButton2.Name = "guna2ImageButton2";
             this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton2.Size = new System.Drawing.Size(119, 118);
+            this.guna2ImageButton2.Size = new System.Drawing.Size(87, 79);
             this.guna2ImageButton2.TabIndex = 1;
             this.guna2ImageButton2.Click += new System.EventHandler(this.guna2ImageButton2_Click);
             // 
@@ -68,9 +69,10 @@
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.guna2Button1.Font = new System.Drawing.Font("Montserrat Black", 15.85714F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Location = new System.Drawing.Point(1033, 798);
+            this.guna2Button1.Location = new System.Drawing.Point(751, 532);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(217, 71);
+            this.guna2Button1.Size = new System.Drawing.Size(158, 47);
             this.guna2Button1.TabIndex = 14;
             this.guna2Button1.Text = "ADOPT";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -89,14 +91,14 @@
             this.PetType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PetType.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PetType.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PetType.Location = new System.Drawing.Point(1156, 395);
-            this.PetType.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.PetType.Location = new System.Drawing.Point(841, 263);
+            this.PetType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PetType.Name = "PetType";
             this.PetType.PasswordChar = '\0';
             this.PetType.PlaceholderForeColor = System.Drawing.Color.Red;
             this.PetType.PlaceholderText = "Enter Color";
             this.PetType.SelectedText = "";
-            this.PetType.Size = new System.Drawing.Size(348, 81);
+            this.PetType.Size = new System.Drawing.Size(253, 54);
             this.PetType.TabIndex = 28;
             // 
             // PetBirth
@@ -113,14 +115,14 @@
             this.PetBirth.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PetBirth.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PetBirth.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PetBirth.Location = new System.Drawing.Point(1156, 544);
-            this.PetBirth.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.PetBirth.Location = new System.Drawing.Point(841, 363);
+            this.PetBirth.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PetBirth.Name = "PetBirth";
             this.PetBirth.PasswordChar = '\0';
             this.PetBirth.PlaceholderForeColor = System.Drawing.Color.Red;
             this.PetBirth.PlaceholderText = "";
             this.PetBirth.SelectedText = "";
-            this.PetBirth.Size = new System.Drawing.Size(348, 81);
+            this.PetBirth.Size = new System.Drawing.Size(253, 54);
             this.PetBirth.TabIndex = 27;
             // 
             // PetSex
@@ -137,14 +139,14 @@
             this.PetSex.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PetSex.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PetSex.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PetSex.Location = new System.Drawing.Point(773, 544);
-            this.PetSex.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.PetSex.Location = new System.Drawing.Point(562, 363);
+            this.PetSex.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PetSex.Name = "PetSex";
             this.PetSex.PasswordChar = '\0';
             this.PetSex.PlaceholderForeColor = System.Drawing.Color.Red;
             this.PetSex.PlaceholderText = "";
             this.PetSex.SelectedText = "";
-            this.PetSex.Size = new System.Drawing.Size(330, 81);
+            this.PetSex.Size = new System.Drawing.Size(240, 54);
             this.PetSex.TabIndex = 26;
             // 
             // PetName
@@ -161,21 +163,22 @@
             this.PetName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PetName.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PetName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PetName.Location = new System.Drawing.Point(773, 395);
-            this.PetName.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.PetName.Location = new System.Drawing.Point(562, 263);
+            this.PetName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PetName.Name = "PetName";
             this.PetName.PasswordChar = '\0';
             this.PetName.PlaceholderForeColor = System.Drawing.Color.Red;
             this.PetName.PlaceholderText = "";
             this.PetName.SelectedText = "";
-            this.PetName.Size = new System.Drawing.Size(330, 81);
+            this.PetName.Size = new System.Drawing.Size(240, 54);
             this.PetName.TabIndex = 25;
             // 
             // petImage
             // 
-            this.petImage.Location = new System.Drawing.Point(145, 214);
+            this.petImage.Location = new System.Drawing.Point(105, 143);
+            this.petImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.petImage.Name = "petImage";
-            this.petImage.Size = new System.Drawing.Size(493, 634);
+            this.petImage.Size = new System.Drawing.Size(359, 423);
             this.petImage.TabIndex = 29;
             this.petImage.TabStop = false;
             // 
@@ -185,9 +188,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("UTM Avo", 14.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Brown;
-            this.label1.Location = new System.Drawing.Point(119, 104);
+            this.label1.Location = new System.Drawing.Point(87, 69);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(343, 49);
+            this.label1.Size = new System.Drawing.Size(251, 35);
             this.label1.TabIndex = 30;
             this.label1.Text = "Name\' Post people";
             // 
@@ -196,19 +200,20 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("UTM Avo", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(494, 167);
+            this.label2.Location = new System.Drawing.Point(359, 111);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 29);
+            this.label2.Size = new System.Drawing.Size(79, 20);
             this.label2.TabIndex = 31;
             this.label2.Text = "Date Post";
             // 
             // adopt
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1669, 881);
+            this.ClientSize = new System.Drawing.Size(1214, 587);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.petImage);
@@ -220,6 +225,7 @@
             this.Controls.Add(this.guna2ImageButton2);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "adopt";
             this.Text = "adopt";
             this.Load += new System.EventHandler(this.adopt_Load);
