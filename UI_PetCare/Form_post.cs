@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using FireSharp.Config;
 using FireSharp.Interfaces;
 using FireSharp.Response;
+using Guna.UI2.WinForms;
 
 namespace UI_PetCare
 {
@@ -22,7 +23,8 @@ namespace UI_PetCare
         }
         private static Random random = new Random();
         private static List<int> usedIds = new List<int>();
-
+        private static bool isadopted;
+        private static bool isfinded;
         public static string ImageIntoBase64String(PictureBox pbox)
         {
             MemoryStream ms = new MemoryStream();
@@ -107,7 +109,9 @@ namespace UI_PetCare
                         Email = EmailTextBox.Text,
                         Phone = PhoneTextBox.Text,
                         DatePost = dateString,
-                        isAdopted = false,
+                        isAdopted = isadopted,
+                        isFinded = isfinded,
+
                         imgstr = ImageIntoBase64String(picturepet)
                     };
                     int Id = Convert.ToInt32(get.id) + 1;
@@ -125,9 +129,32 @@ namespace UI_PetCare
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
+                    PetNameTextBox.Clear();
+                    PetSubtypeTextBox.Clear();
+                    PetColorTextBox.Clear();
+                    PetDofTextBox.Clear();
+                    NameClientTextBox.Clear();
+                    EmailTextBox.Clear();
+                    PhoneTextBox.Clear();
+                    picturepet.Image= null;
+                    PetSexTextBox.Clear();
                 }
             }
 
+        }
+
+        private void status_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (status.SelectedItem.ToString() == "Adopt")
+            {
+                isadopted = false;
+                isfinded = true;
+            }
+            else
+            {
+                isfinded = false;
+                isadopted = true;
+            }
         }
     }
 }
