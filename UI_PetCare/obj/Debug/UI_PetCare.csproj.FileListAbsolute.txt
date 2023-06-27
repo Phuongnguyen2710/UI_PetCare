@@ -206,3 +206,4 @@ C:\Users\ASUS\Desktop\New\Pet_care_2\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.
 C:\Users\ASUS\Desktop\New\Pet_care_2\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.csproj.CopyComplete
 C:\Users\ASUS\Desktop\New\Pet_care_2\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.exe
 C:\Users\ASUS\Desktop\New\Pet_care_2\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.pdb
+C:\Users\ASUS\Desktop\New\Pet_care_2\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.Form_HealthPetInfo.resources

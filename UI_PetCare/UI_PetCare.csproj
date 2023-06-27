@@ -84,6 +84,12 @@
     <Compile Include="Form_ChatBox.designer.cs">
       <DependentUpon>Form_ChatBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_HealthPetInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_HealthPetInfo.Designer.cs">
+      <DependentUpon>Form_HealthPetInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_post.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,7 @@
     <Compile Include="Form_Verify.Designer.cs">
       <DependentUpon>Form_Verify.cs</DependentUpon>
     </Compile>
+    <Compile Include="HeathPet.cs" />
     <Compile Include="InComming.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -161,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_ChatBox.resx">
       <DependentUpon>Form_ChatBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_HealthPetInfo.resx">
+      <DependentUpon>Form_HealthPetInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_post.resx">
       <DependentUpon>Form_post.cs</DependentUpon>

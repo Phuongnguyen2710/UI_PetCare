@@ -23,5 +23,6 @@ namespace UI_PetCare
 
         public bool isFinded { get; set;}
 
+        public HealthPet Health_Pet { get; set; }
     }
 }
