@@ -30,7 +30,7 @@ namespace UI_PetCare
         //Firebase Client
         IFirebaseClient client;
         string avatarimg = "";//lay avater tu firebase
-
+        string email, phone;
 
 
         private void Form1_Load(object sender, EventArgs e)
@@ -63,6 +63,8 @@ namespace UI_PetCare
                             string user_result = get.Value.username;
                             string pass_result = get.Value.password;
                             avatarimg = get.Value.avatar;
+                            email = get.Value.email;
+                            phone = get.Value.phone;
                             string hashPass = ComputeSha256Hash(guna2TextBox2.Text);
                             if (guna2TextBox1.Text == user_result && hashPass == pass_result )
                             {
@@ -90,6 +92,8 @@ namespace UI_PetCare
                             {
                                 MessageBox.Show("Welcome " + guna2TextBox1.Text);
                                 ShareVariable.Username = guna2TextBox1.Text;
+                                ShareVariable.Phone = phone;
+                                ShareVariable.Email = email;
                                 this.Hide();
                                 Form2 f2 = new Form2();
                                 f2.guna2TextBox1.Text = this.guna2TextBox1.Text;

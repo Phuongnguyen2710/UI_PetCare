@@ -65,6 +65,14 @@ namespace UI_PetCare
             {
                 MessageBox.Show(ex.Message);
             }
+
+            NameClientTextBox.Text = ShareVariable.Username;
+            EmailTextBox.Text = ShareVariable.Email;
+            PhoneTextBox.Text = ShareVariable.Phone;
+
+            NameClientTextBox.Enabled = true;
+            EmailTextBox.Enabled = true;
+            PhoneTextBox.Enabled = true;
         }
 
         private void btt_Click_Click(object sender, EventArgs e)
