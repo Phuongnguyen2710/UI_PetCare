@@ -21,10 +21,12 @@ namespace UI_PetCare
         {
             InitializeComponent();
         }
-        PostData obj;
-        private int num_id;
-        private int copy_num_id;
-        private int current_num_id;
+        //PostData obj;
+        private int total_id;
+        private int current_num_id = 0;
+        private int id_petAdopt = 0;
+        private bool isCheck;
+        private List<PostData> listPost = new List<PostData>();
 
         IFirebaseConfig config = new FirebaseConfig
 
@@ -44,52 +46,84 @@ namespace UI_PetCare
             }
         }
 
-
         IFirebaseClient client;
 
-        private async void guna2ImageButton2_Click(object sender, EventArgs e)
+        public async void curentListPetnotAdopted()
         {
-            if (num_id == 0) num_id = copy_num_id;
-            current_num_id = num_id;
-            FirebaseResponse response = await client.GetTaskAsync("Post/" + num_id.ToString());
-            PostData obj = response.ResultAs<PostData>();
-            num_id--;
-            if(obj.isAdopted == false)
+            
+            for (int i = 1; i <= total_id; i++)
             {
+                FirebaseResponse response = await client.GetTaskAsync("Post/" + i.ToString());
+                PostData obj = response.ResultAs<PostData>();
+                if (obj.isAdopted == false)
+                {
+                    listPost.Add(obj);
+                }
+            }
+        }
+        public void testOn()
+        {
+            while (true)
+            {
+                if (isCheck) curentListPetnotAdopted();
+                break;
+            }
+        }
+        private async void next_ButtonClick(object sender, EventArgs e)
+        {
+            try
+            {
+                
+                MessageBox.Show("Phan tu trong listPost" + listPost.Count);
+                if (current_num_id > listPost.Count-1) current_num_id = 0;
+
+                PostData obj = listPost[current_num_id];
                 PetName.Text = obj.PetName;
                 PetBirth.Text = obj.PetDob;
                 PetSex.Text = obj.PetSex;
                 PetType.Text = obj.PetSubtype;
+                Height.Text = obj.Health_Pet.Height;
+                Weight.Text = obj.Health_Pet.Weight;
+                Vaccine.Text = obj.Health_Pet.Vaccinations;
+                preOwner.Text = obj.Health_Pet.PreviousOwner;
                 label2.Text = obj.DatePost;
                 label1.Text = obj.NameClient;
                 string imagestring = obj.imgstr;
                 Image image = Base64StringIntoImage(imagestring);
                 petImage.Image = image;
                 petImage.SizeMode = PictureBoxSizeMode.StretchImage;
-            }
-            
+                id_petAdopt = obj.id;
+                current_num_id++;
+            } catch { }
+           
         }
 
         private async void adopt_Load(object sender, EventArgs e)
         {
+            
             client = new FireSharp.FirebaseClient(config);
             FirebaseResponse resp = await client.GetTaskAsync("Couter/Node");
             CounterClass get = resp.ResultAs<CounterClass>();
-            num_id = Int32.Parse(get.id);
-            copy_num_id = num_id;
+            total_id = Int32.Parse(get.id);
+            curentListPetnotAdopted();
+
         }
 
-        private async void guna2Button1_Click(object sender, EventArgs e)
+        private async void Adopt_ButtonClick(object sender, EventArgs e)
         {
-            MessageBox.Show(current_num_id.ToString());
-            FirebaseResponse response = await client.GetTaskAsync("Post/" + current_num_id.ToString());
+            
+            MessageBox.Show("ID = " + id_petAdopt.ToString());
+            FirebaseResponse response = await client.GetTaskAsync("Post/" + id_petAdopt.ToString());
             PostData obj = response.ResultAs<PostData>();
             PostData postData = new PostData();
             postData = obj;
             postData.isAdopted = true;
-
-            FirebaseResponse res = await client.UpdateTaskAsync("Post/" + current_num_id.ToString(), postData);
+            FirebaseResponse res = await client.UpdateTaskAsync("Post/" + id_petAdopt.ToString(), postData);
             PostData reusult = res.ResultAs<PostData>();
+            isCheck = true;
+            listPost.Clear();
+            testOn();
+            isCheck = false;
             MessageBox.Show("This Pet Adopted", "Congarts");
         }
 

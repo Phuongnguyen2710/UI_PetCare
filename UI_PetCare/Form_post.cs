@@ -113,7 +113,7 @@ namespace UI_PetCare
                         isAdopted = isadopted,
                         isFinded = isfinded,
                         Health_Pet = healthPet,
-
+                        id = Convert.ToInt32(get.id) + 1,
                         imgstr = ImageIntoBase64String(picturepet)
                     };
                     int Id = Convert.ToInt32(get.id) + 1;
