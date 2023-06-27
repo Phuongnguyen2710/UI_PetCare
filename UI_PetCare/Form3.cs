@@ -42,6 +42,14 @@ namespace UI_PetCare
             }
         }
 
+        private async Task UpdateIsLoginFalse(string username)
+        {
+            FirebaseResponse response = await client.GetTaskAsync("Users/" + username);
+            User user = response.ResultAs<User>();
+            user.islogin = false;
+            await client.UpdateTaskAsync("Users/" + username, user);
+        }
+
         private Form CurrentFormChild;
         private void OpenChildForm(Form ChildForm)
         {
@@ -61,9 +69,10 @@ namespace UI_PetCare
 
 
         }
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private async void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Hide();
+            await UpdateIsLoginFalse(ShareVariable.Username);
             fLogin f1 = new fLogin();
             f1.ShowDialog();
         }

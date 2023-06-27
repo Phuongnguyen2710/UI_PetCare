@@ -13,6 +13,7 @@ using System.Windows.Forms;
 using FireSharp.Config;
 using FireSharp.Interfaces;
 using FireSharp.Response;
+using Microsoft.Win32;
 
 namespace UI_PetCare
 {
@@ -65,18 +66,43 @@ namespace UI_PetCare
                     phone = guna2TextBox4.Text,
                     location = guna2TextBox5.Text,
                     avatar = ImageIntoBase64String(Avatar),
-
+                    islogin = false,
                 };
+                if(!id_Leave())
+                {
 
+                    //but if you want to have like a unique key use Push not Set.
+                    FirebaseResponse response = client.Set("Users/" + guna2TextBox1.Text, user);
 
-                //but if you want to have like a unique key use Push not Set.
-                FirebaseResponse response = client.Set("Users/" + guna2TextBox1.Text, user);
+                    MessageBox.Show("Register Account Successfully");
+                    this.Close();
+                    fLogin f1 = new fLogin();
+                    f1.Show();
+                }
 
-                MessageBox.Show("Register Account Successfully");
-                this.Close();
-                fLogin f1 = new fLogin();
-                f1.Show();
             }
+        }
+
+        private bool id_Leave()
+        {
+            //Identifying if the name is existed or not.
+            // From looping it using foreach.
+
+            FirebaseResponse response = client.Get("Users/");
+            Dictionary<string, User> getSameId = response.ResultAs<Dictionary<string, User>>();
+            foreach (var sameID in getSameId)
+            {
+                string getsame = sameID.Value.username;
+                if (guna2TextBox1.Text == getsame)
+                {
+                    MessageBox.Show("Name is Already Taken.");
+                    guna2TextBox1.Text = string.Empty;
+                    return true;
+                }
+
+            }
+
+            return false;
         }
 
         private static string ComputeSha256Hash(string rawData)

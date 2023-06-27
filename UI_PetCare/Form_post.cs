@@ -118,6 +118,17 @@ namespace UI_PetCare
 
                     var set = client.Set("Post/" + Id, pd);
                     MessageBox.Show("Post Successfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    
+                    //Clear all info
+                    PetNameTextBox.Clear();
+                    PetSubtypeTextBox.Clear();
+                    PetColorTextBox.Clear();
+                    PetDofTextBox.Clear();
+                    NameClientTextBox.Clear();
+                    EmailTextBox.Clear();
+                    PhoneTextBox.Clear();
+                    picturepet.Image = null;
+                    PetSexTextBox.Clear();
 
                     var obj = new CounterClass
                     {
@@ -129,15 +140,7 @@ namespace UI_PetCare
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
-                    PetNameTextBox.Clear();
-                    PetSubtypeTextBox.Clear();
-                    PetColorTextBox.Clear();
-                    PetDofTextBox.Clear();
-                    NameClientTextBox.Clear();
-                    EmailTextBox.Clear();
-                    PhoneTextBox.Clear();
-                    picturepet.Image= null;
-                    PetSexTextBox.Clear();
+
                 }
             }
 
