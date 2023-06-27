@@ -47,10 +47,10 @@
             // 
             // picturepet
             // 
-            this.picturepet.Location = new System.Drawing.Point(88, 242);
-            this.picturepet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picturepet.Location = new System.Drawing.Point(83, 236);
+            this.picturepet.Margin = new System.Windows.Forms.Padding(4);
             this.picturepet.Name = "picturepet";
-            this.picturepet.Size = new System.Drawing.Size(494, 470);
+            this.picturepet.Size = new System.Drawing.Size(505, 489);
             this.picturepet.TabIndex = 0;
             this.picturepet.TabStop = false;
             // 
@@ -258,27 +258,28 @@
             this.btt_Click.FillColor = System.Drawing.Color.LightPink;
             this.btt_Click.Font = new System.Drawing.Font("UTM Avo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btt_Click.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btt_Click.Location = new System.Drawing.Point(182, 764);
-            this.btt_Click.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btt_Click.Location = new System.Drawing.Point(195, 764);
+            this.btt_Click.Margin = new System.Windows.Forms.Padding(4);
             this.btt_Click.Name = "btt_Click";
             this.btt_Click.PressedColor = System.Drawing.Color.Transparent;
-            this.btt_Click.Size = new System.Drawing.Size(258, 88);
+            this.btt_Click.Size = new System.Drawing.Size(258, 71);
             this.btt_Click.TabIndex = 10;
             this.btt_Click.Text = "Upload";
             this.btt_Click.Click += new System.EventHandler(this.btt_Click_Click);
             // 
             // PostButton
             // 
+            this.PostButton.BackColor = System.Drawing.Color.Transparent;
             this.PostButton.BorderRadius = 20;
             this.PostButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.PostButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.PostButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.PostButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.PostButton.FillColor = System.Drawing.Color.LightPink;
-            this.PostButton.Font = new System.Drawing.Font("UTM Avo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PostButton.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.PostButton.Location = new System.Drawing.Point(966, 764);
-            this.PostButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PostButton.Font = new System.Drawing.Font("Montserrat Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PostButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.PostButton.Location = new System.Drawing.Point(974, 747);
+            this.PostButton.Margin = new System.Windows.Forms.Padding(4);
             this.PostButton.Name = "PostButton";
             this.PostButton.PressedColor = System.Drawing.Color.Transparent;
             this.PostButton.Size = new System.Drawing.Size(267, 88);
@@ -288,7 +289,7 @@
             // 
             // status
             // 
-            this.status.BackColor = System.Drawing.Color.Transparent;
+            this.status.BackColor = System.Drawing.SystemColors.Window;
             this.status.BorderColor = System.Drawing.Color.DarkSlateGray;
             this.status.BorderRadius = 20;
             this.status.BorderThickness = 2;
@@ -303,7 +304,7 @@
             "Adopt",
             "Find"});
             this.status.Location = new System.Drawing.Point(662, 287);
-            this.status.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.status.Margin = new System.Windows.Forms.Padding(4);
             this.status.Name = "status";
             this.status.Size = new System.Drawing.Size(404, 36);
             this.status.TabIndex = 13;
@@ -313,6 +314,7 @@
             // 
             // bttMoreDetail
             // 
+            this.bttMoreDetail.BackColor = System.Drawing.SystemColors.Window;
             this.bttMoreDetail.BorderColor = System.Drawing.Color.DarkSlateGray;
             this.bttMoreDetail.BorderRadius = 20;
             this.bttMoreDetail.BorderThickness = 2;
@@ -324,7 +326,7 @@
             this.bttMoreDetail.Font = new System.Drawing.Font("UTM Avo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttMoreDetail.ForeColor = System.Drawing.Color.SaddleBrown;
             this.bttMoreDetail.Location = new System.Drawing.Point(1120, 610);
-            this.bttMoreDetail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bttMoreDetail.Margin = new System.Windows.Forms.Padding(4);
             this.bttMoreDetail.Name = "bttMoreDetail";
             this.bttMoreDetail.PressedColor = System.Drawing.Color.Transparent;
             this.bttMoreDetail.Size = new System.Drawing.Size(406, 50);
@@ -354,7 +356,7 @@
             this.Controls.Add(this.picturepet);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_post";
             this.Text = "Form_post";
             this.Load += new System.EventHandler(this.Form_post_Load);
