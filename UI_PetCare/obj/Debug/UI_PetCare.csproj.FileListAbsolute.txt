@@ -207,3 +207,35 @@ C:\Users\ASUS\Desktop\New\Pet_care_2\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.
 C:\Users\ASUS\Desktop\New\Pet_care_2\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.exe
 C:\Users\ASUS\Desktop\New\Pet_care_2\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.pdb
 C:\Users\ASUS\Desktop\New\Pet_care_2\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.Form_HealthPetInfo.resources
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\bin\Debug\UI_PetCare.exe.config
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\bin\Debug\UI_PetCare.exe
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\bin\Debug\UI_PetCare.pdb
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\bin\Debug\FireSharp.dll
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\bin\Debug\FireSharp.Serialization.JsonNet.dll
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\bin\Debug\Guna.UI2.dll
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\bin\Debug\RestSharp.dll
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\bin\Debug\RestSharp.xml
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\obj\Debug\UI_PetCare.csproj.AssemblyReference.cache
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\obj\Debug\UI_PetCare.csproj.SuggestedBindingRedirects.cache
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\obj\Debug\UI_PetCare.adopt.resources
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\obj\Debug\UI_PetCare.fLogin.resources
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\obj\Debug\UI_PetCare.Form2.resources
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\obj\Debug\UI_PetCare.Form_ChatBox.resources
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\obj\Debug\UI_PetCare.Form_HealthPetInfo.resources
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\obj\Debug\UI_PetCare.Form_post.resources
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\obj\Debug\UI_PetCare.Form_ResetPass.resources
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\obj\Debug\UI_PetCare.Form_FgtPass.resources
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\obj\Debug\UI_PetCare.Form3.resources
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\obj\Debug\UI_PetCare.Form_Register.resources
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\obj\Debug\UI_PetCare.Form_Verify.resources
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\obj\Debug\UI_PetCare.InComming.resources
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\obj\Debug\UI_PetCare.OutGoing.resources
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\obj\Debug\UI_PetCare.Properties.Resources.resources
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\obj\Debug\UI_PetCare.setting.resources
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\obj\Debug\UI_PetCare.csproj.GenerateResource.cache
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\obj\Debug\UI_PetCare.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\obj\Debug\UI_PetCare.csproj.CopyComplete
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\obj\Debug\UI_PetCare.exe
+C:\Users\ASUS\Documents\LTM nhóm 7\UI_PetCare\obj\Debug\UI_PetCare.pdb
