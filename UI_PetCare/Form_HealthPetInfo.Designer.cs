@@ -56,7 +56,7 @@
             this.heighttextbox.Name = "heighttextbox";
             this.heighttextbox.PasswordChar = '\0';
             this.heighttextbox.PlaceholderForeColor = System.Drawing.Color.Red;
-            this.heighttextbox.PlaceholderText = "Enter Height";
+            this.heighttextbox.PlaceholderText = "Enter Height (Cm)";
             this.heighttextbox.SelectedText = "";
             this.heighttextbox.Size = new System.Drawing.Size(318, 47);
             this.heighttextbox.TabIndex = 0;
@@ -98,7 +98,7 @@
             this.weighttextbox.Name = "weighttextbox";
             this.weighttextbox.PasswordChar = '\0';
             this.weighttextbox.PlaceholderForeColor = System.Drawing.Color.Red;
-            this.weighttextbox.PlaceholderText = "Enter Weight";
+            this.weighttextbox.PlaceholderText = "Enter Weight (Kg)";
             this.weighttextbox.SelectedText = "";
             this.weighttextbox.Size = new System.Drawing.Size(318, 47);
             this.weighttextbox.TabIndex = 6;

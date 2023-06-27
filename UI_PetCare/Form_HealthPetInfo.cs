@@ -24,9 +24,28 @@ namespace UI_PetCare
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            if (double.TryParse(heighttextbox.Text, out double height))
+            {
+                healthPetInfo.Height = height + "cm";
+            }
+            else
+            {
+                // Hiển thị thông báo lỗi cho người dùng
+                MessageBox.Show("Please enter a valid height value.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
-            healthPetInfo.Height = heighttextbox.Text + "cm";
-            healthPetInfo.Weight = weighttextbox.Text + "kg";
+            if (double.TryParse(weighttextbox.Text, out double weight))
+            {
+                healthPetInfo.Weight = weight + "kg";
+            }
+            else
+            {
+                // Hiển thị thông báo lỗi cho người dùng
+                MessageBox.Show("Please enter a valid weight value.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             healthPetInfo.Vaccinations = Vaccinationstextbox.Text;
             healthPetInfo.PreviousOwner = previousBoss.Text;
             healthPetInfo.FavoriteFood = FavoriteFoodtextbox.Text;
