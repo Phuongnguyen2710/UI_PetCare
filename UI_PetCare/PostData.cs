@@ -20,5 +20,9 @@ namespace UI_PetCare
         public string imgstr { get; set; }
         public string DatePost { get; set; }
         public bool isAdopted { get; set; }
+
+        public bool isFinded { get; set;}
+
+        public HealthPet Health_Pet { get; set; }
     }
 }

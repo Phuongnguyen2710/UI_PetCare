@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using FireSharp.Config;
 using FireSharp.Interfaces;
 using FireSharp.Response;
+using Guna.UI2.WinForms;
 
 namespace UI_PetCare
 {
@@ -22,7 +23,9 @@ namespace UI_PetCare
         }
         private static Random random = new Random();
         private static List<int> usedIds = new List<int>();
-
+        private static bool isadopted;
+        private static bool isfinded;
+        private static HealthPet healthPet = new HealthPet();
         public static string ImageIntoBase64String(PictureBox pbox)
         {
             MemoryStream ms = new MemoryStream();
@@ -107,13 +110,27 @@ namespace UI_PetCare
                         Email = EmailTextBox.Text,
                         Phone = PhoneTextBox.Text,
                         DatePost = dateString,
-                        isAdopted = false,
+                        isAdopted = isadopted,
+                        isFinded = isfinded,
+                        Health_Pet = healthPet,
+
                         imgstr = ImageIntoBase64String(picturepet)
                     };
                     int Id = Convert.ToInt32(get.id) + 1;
 
                     var set = client.Set("Post/" + Id, pd);
                     MessageBox.Show("Post Successfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    
+                    //Clear all info
+                    PetNameTextBox.Clear();
+                    PetSubtypeTextBox.Clear();
+                    PetColorTextBox.Clear();
+                    PetDofTextBox.Clear();
+                    NameClientTextBox.Clear();
+                    EmailTextBox.Clear();
+                    PhoneTextBox.Clear();
+                    picturepet.Image = null;
+                    PetSexTextBox.Clear();
 
                     var obj = new CounterClass
                     {
@@ -125,9 +142,40 @@ namespace UI_PetCare
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
+
                 }
             }
 
+        }
+
+        private void status_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (status.SelectedItem.ToString() == "Adopt")
+            {
+                isadopted = false;
+                isfinded = true;
+                bttMoreDetail.Enabled = true;
+            }
+            else
+            {
+                isfinded = false;
+                isadopted = true;
+                bttMoreDetail.Enabled = false;
+            }
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            // Hiển thị Form_HealthPetInfo để lấy thông tin về HealthPet
+            Form_HealthPetInfo healthPetForm = new Form_HealthPetInfo(healthPet);
+            DialogResult result = healthPetForm.ShowDialog();
+
+            // Kiểm tra xem người dùng có nhấn nút OK hay không
+            if (result == DialogResult.OK)
+            {
+                // Lấy thông tin HealthPet từ Form_HealthPetInfo
+                healthPet = healthPetForm.gethealthpet();
+            }
         }
     }
 }

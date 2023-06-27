@@ -15,5 +15,7 @@ namespace UI_PetCare
         public string phone { get; set; }
         public string location { get; set; }
         public string avatar { get; set; }
+
+        public bool islogin { get; set; }
     }
 }

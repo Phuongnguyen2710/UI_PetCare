@@ -38,9 +38,9 @@ namespace UI_PetCare
             client = new FireSharp.FirebaseClient(config);
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private async void guna2Button1_Click(object sender, EventArgs e)
         {
-            //Login
+            // Login
 
             if (string.IsNullOrEmpty(guna2TextBox1.Text) || string.IsNullOrEmpty(guna2TextBox2.Text))
             {
@@ -51,42 +51,61 @@ namespace UI_PetCare
             {
                 try
                 {
-                    //Looping to get the match data using foreach
-                    FirebaseResponse response = client.Get("Users/");
-                    Dictionary<string, User> result = response.ResultAs<Dictionary<string, User>>();
-
-                    bool login = false;
-                    foreach (var get in result)
+                    await Task.Run(() =>
                     {
-                        string user_result = get.Value.username;
-                        string pass_result = get.Value.password;
-                        avatarimg = get.Value.avatar;
-                        string hashPass = ComputeSha256Hash(guna2TextBox2.Text);
-                        if (guna2TextBox1.Text == user_result && hashPass == pass_result)
+                        FirebaseResponse response = client.Get("Users/");
+                        Dictionary<string, User> result = response.ResultAs<Dictionary<string, User>>();
+
+                        bool login = false;
+                        bool check = true; // check islogin
+                        foreach (var get in result)
                         {
-                            login = true;
-                            break;
+                            string user_result = get.Value.username;
+                            string pass_result = get.Value.password;
+                            avatarimg = get.Value.avatar;
+                            string hashPass = ComputeSha256Hash(guna2TextBox2.Text);
+                            if (guna2TextBox1.Text == user_result && hashPass == pass_result )
+                            {
+                                if (get.Value.islogin != true)
+                                {
+                                    login = true;
+                                    check = true;
+                                    get.Value.islogin = true;
+                                    var updateResponse = client.Update("Users/" + get.Key, get.Value);
+                                    break;
+                                }
+                                else
+                                {
+                                    MessageBox.Show("You have already login!");
+                                    check = false;
+                                    break;
+                                }
+
+                            }
                         }
-                    }
-                    if (login)
-                    {
-                        MessageBox.Show("Welcome " + guna2TextBox1.Text);
-                        ShareVariable.Username = guna2TextBox1.Text;
-                        //Declare some public string so you can pass the data to the another Frame.
-                        this.Hide();
-                        Form2 f2 = new Form2();
-                        f2.guna2TextBox1.Text = this.guna2TextBox1.Text;
-                        f2.ShowDialog();
 
-                    }
-                    else MessageBox.Show("Incorrect username or password.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                        Invoke(new Action(() =>
+                        {
+                            if (login)
+                            {
+                                MessageBox.Show("Welcome " + guna2TextBox1.Text);
+                                ShareVariable.Username = guna2TextBox1.Text;
+                                this.Hide();
+                                Form2 f2 = new Form2();
+                                f2.guna2TextBox1.Text = this.guna2TextBox1.Text;
+                                f2.ShowDialog();
+                            }
+                            else if (check)
+                            {
+                                MessageBox.Show("Incorrect username or password.", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                        }));
+                    });
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
-
             }
         }
 
@@ -125,5 +144,7 @@ namespace UI_PetCare
             Form_FgtPass form_FgtPass = new Form_FgtPass();
             form_FgtPass.ShowDialog();
         }
+
+
     }
 }

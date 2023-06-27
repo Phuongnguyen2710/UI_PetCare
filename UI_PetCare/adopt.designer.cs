@@ -51,7 +51,7 @@
             this.guna2ImageButton2.ImageRotate = 0F;
             this.guna2ImageButton2.ImageSize = new System.Drawing.Size(120, 120);
             this.guna2ImageButton2.Location = new System.Drawing.Point(1119, 280);
-            this.guna2ImageButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2ImageButton2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ImageButton2.Name = "guna2ImageButton2";
             this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.guna2ImageButton2.Size = new System.Drawing.Size(87, 79);
@@ -70,7 +70,7 @@
             this.guna2Button1.Font = new System.Drawing.Font("Montserrat Black", 15.85714F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
             this.guna2Button1.Location = new System.Drawing.Point(751, 532);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(158, 47);
             this.guna2Button1.TabIndex = 14;
@@ -175,10 +175,10 @@
             // 
             // petImage
             // 
-            this.petImage.Location = new System.Drawing.Point(105, 143);
-            this.petImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.petImage.Location = new System.Drawing.Point(111, 144);
+            this.petImage.Margin = new System.Windows.Forms.Padding(2);
             this.petImage.Name = "petImage";
-            this.petImage.Size = new System.Drawing.Size(359, 423);
+            this.petImage.Size = new System.Drawing.Size(342, 379);
             this.petImage.TabIndex = 29;
             this.petImage.TabStop = false;
             // 
@@ -225,7 +225,7 @@
             this.Controls.Add(this.guna2ImageButton2);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "adopt";
             this.Text = "adopt";
             this.Load += new System.EventHandler(this.adopt_Load);
