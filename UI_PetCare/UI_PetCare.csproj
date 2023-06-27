@@ -112,7 +112,7 @@
     <Compile Include="OutGoing.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="OutGoing.Designer.cs">
+    <Compile Include="OutGoing.designer.cs">
       <DependentUpon>OutGoing.cs</DependentUpon>
     </Compile>
     <Compile Include="pet.cs" />

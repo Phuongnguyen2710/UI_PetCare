@@ -117,5 +117,11 @@ namespace UI_PetCare
         {
              client = new FireSharp.FirebaseClient(config);
         }
+
+        private void guna2TextBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                guna2Button1_Click(this, new EventArgs());
+        }
     }
 }
