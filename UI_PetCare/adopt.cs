@@ -2,6 +2,7 @@
 using FireSharp.Config;
 using FireSharp.Interfaces;
 using FireSharp.Response;
+using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +10,8 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net.Mail;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -95,7 +98,8 @@ namespace UI_PetCare
                 id_petAdopt = obj.id;
                 current_num_id++;
             } catch { }
-           
+            Adopt_Button.Show();
+            guna2Button1.Hide();
         }
 
         private async void adopt_Load(object sender, EventArgs e)
@@ -106,7 +110,7 @@ namespace UI_PetCare
             CounterClass get = resp.ResultAs<CounterClass>();
             total_id = Int32.Parse(get.id);
             curentListPetnotAdopted();
-
+            guna2Button1.Hide();
         }
 
         private async void Adopt_ButtonClick(object sender, EventArgs e)
@@ -125,11 +129,51 @@ namespace UI_PetCare
             testOn();
             isCheck = false;
             MessageBox.Show("This Pet Adopted", "Congarts");
-        }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-
+            string postEmail = reusult.Email;
+            IFirebaseConfig config = new FirebaseConfig
+            {
+                AuthSecret = "BFp0TAb8sUuV5tkaRZDWlk5NzOdrFLJWr2NkqPxt",
+                BasePath = "https://registerandlogin-31e76-default-rtdb.firebaseio.com/"
+            };
+            IFirebaseClient Client;
+            Client = new FireSharp.FirebaseClient(config);
+            MailMessage message = new MailMessage();
+            string from, pass, messbody;
+            from = "adoptionpet818@gmail.com";
+            pass = "nqrhurlflgaphvqr";
+            string to = postEmail;
+            string petName = PetName.Text;
+            string user = ShareVariable.Username;
+            FirebaseResponse response1 = await Client.GetTaskAsync("Users/" + user);
+            User usr = response1.ResultAs<User>();
+            string usremail = usr.email;
+            string usrphone = usr.phone;
+            string usrlocation = usr.location;
+            messbody = $"Your pet named {petName} has been adopted!\nHere is the information of Adopter\n     Name: {user}\n     Email: {usremail}\n     Phone number: {usrphone}\n     Location: {usrlocation}";
+            message.To.Add(to);
+            message.From = new MailAddress(from);
+            message.Body = messbody;
+            message.Subject = "Pet Adopted";
+            SmtpClient smtp = new SmtpClient("smtp.gmail.com");
+            smtp.EnableSsl = true;
+            smtp.Port = 587;
+            smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+            smtp.Credentials = new NetworkCredential(from, pass);
+            try
+            {
+                smtp.Send(message);
+                MessageBox.Show("Your info has been sent to the post user");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            Adopt_Button.Hide();
+            guna2Button1.Show();
         }
     }
+
+      
+    
 }

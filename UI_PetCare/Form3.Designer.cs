@@ -137,7 +137,7 @@
             this.panel1.BorderColor = System.Drawing.Color.HotPink;
             this.panel1.BorderRadius = 20;
             this.panel1.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.panel1.Location = new System.Drawing.Point(292, 61);
+            this.panel1.Location = new System.Drawing.Point(291, 66);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(105, 10);
             this.panel1.TabIndex = 12;

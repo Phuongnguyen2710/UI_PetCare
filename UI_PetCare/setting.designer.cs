@@ -51,13 +51,15 @@
             this.uploadButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.uploadButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.uploadButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.uploadButton.Font = new System.Drawing.Font("UTM Avo", 14.14286F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uploadButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.14286F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uploadButton.ForeColor = System.Drawing.Color.Black;
-            this.uploadButton.Location = new System.Drawing.Point(1403, 519);
+            this.uploadButton.Location = new System.Drawing.Point(998, 437);
+            this.uploadButton.Margin = new System.Windows.Forms.Padding(2);
             this.uploadButton.Name = "uploadButton";
-            this.uploadButton.Size = new System.Drawing.Size(211, 55);
+            this.uploadButton.Size = new System.Drawing.Size(151, 39);
             this.uploadButton.TabIndex = 21;
             this.uploadButton.Text = "Upload";
+            this.uploadButton.Click += new System.EventHandler(this.uploadButton_Click);
             // 
             // saveButton
             // 
@@ -68,11 +70,12 @@
             this.saveButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.saveButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.saveButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.saveButton.Font = new System.Drawing.Font("Montserrat Black", 15.85714F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.85714F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveButton.ForeColor = System.Drawing.Color.Black;
-            this.saveButton.Location = new System.Drawing.Point(829, 778);
+            this.saveButton.Location = new System.Drawing.Point(592, 556);
+            this.saveButton.Margin = new System.Windows.Forms.Padding(2);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(211, 84);
+            this.saveButton.Size = new System.Drawing.Size(151, 60);
             this.saveButton.TabIndex = 22;
             this.saveButton.Text = "SAVE";
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
@@ -90,17 +93,17 @@
             this.phonetextbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.phonetextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.phonetextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.phonetextbox.Font = new System.Drawing.Font("UTM Avo", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phonetextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phonetextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.phonetextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.phonetextbox.Location = new System.Drawing.Point(679, 471);
-            this.phonetextbox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.phonetextbox.Location = new System.Drawing.Point(485, 352);
+            this.phonetextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.phonetextbox.Name = "phonetextbox";
             this.phonetextbox.PasswordChar = '\0';
             this.phonetextbox.PlaceholderForeColor = System.Drawing.Color.Red;
             this.phonetextbox.PlaceholderText = "Phone number";
             this.phonetextbox.SelectedText = "";
-            this.phonetextbox.Size = new System.Drawing.Size(536, 66);
+            this.phonetextbox.Size = new System.Drawing.Size(383, 47);
             this.phonetextbox.TabIndex = 23;
             // 
             // locationtextbox
@@ -116,17 +119,17 @@
             this.locationtextbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.locationtextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.locationtextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.locationtextbox.Font = new System.Drawing.Font("UTM Avo", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.locationtextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.locationtextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.locationtextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.locationtextbox.Location = new System.Drawing.Point(679, 382);
-            this.locationtextbox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.locationtextbox.Location = new System.Drawing.Point(485, 286);
+            this.locationtextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.locationtextbox.Name = "locationtextbox";
             this.locationtextbox.PasswordChar = '\0';
             this.locationtextbox.PlaceholderForeColor = System.Drawing.Color.Red;
             this.locationtextbox.PlaceholderText = "Location";
             this.locationtextbox.SelectedText = "";
-            this.locationtextbox.Size = new System.Drawing.Size(536, 66);
+            this.locationtextbox.Size = new System.Drawing.Size(383, 47);
             this.locationtextbox.TabIndex = 24;
             // 
             // usernametextbox
@@ -142,17 +145,18 @@
             this.usernametextbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.usernametextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.usernametextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.usernametextbox.Font = new System.Drawing.Font("UTM Avo", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernametextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernametextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.usernametextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.usernametextbox.Location = new System.Drawing.Point(679, 221);
-            this.usernametextbox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.usernametextbox.Location = new System.Drawing.Point(485, 158);
+            this.usernametextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.usernametextbox.Name = "usernametextbox";
             this.usernametextbox.PasswordChar = '\0';
             this.usernametextbox.PlaceholderForeColor = System.Drawing.Color.Red;
             this.usernametextbox.PlaceholderText = "Username";
+            this.usernametextbox.ReadOnly = true;
             this.usernametextbox.SelectedText = "";
-            this.usernametextbox.Size = new System.Drawing.Size(536, 66);
+            this.usernametextbox.Size = new System.Drawing.Size(383, 47);
             this.usernametextbox.TabIndex = 25;
             // 
             // emailtextbox
@@ -168,17 +172,17 @@
             this.emailtextbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.emailtextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.emailtextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.emailtextbox.Font = new System.Drawing.Font("UTM Avo", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailtextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailtextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.emailtextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.emailtextbox.Location = new System.Drawing.Point(679, 299);
-            this.emailtextbox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.emailtextbox.Location = new System.Drawing.Point(485, 219);
+            this.emailtextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.emailtextbox.Name = "emailtextbox";
             this.emailtextbox.PasswordChar = '\0';
             this.emailtextbox.PlaceholderForeColor = System.Drawing.Color.Red;
             this.emailtextbox.PlaceholderText = "Email";
             this.emailtextbox.SelectedText = "";
-            this.emailtextbox.Size = new System.Drawing.Size(536, 66);
+            this.emailtextbox.Size = new System.Drawing.Size(383, 47);
             this.emailtextbox.TabIndex = 26;
             // 
             // passtextbox
@@ -194,17 +198,17 @@
             this.passtextbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.passtextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.passtextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.passtextbox.Font = new System.Drawing.Font("UTM Avo", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passtextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passtextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.passtextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.passtextbox.Location = new System.Drawing.Point(679, 568);
-            this.passtextbox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.passtextbox.Location = new System.Drawing.Point(485, 420);
+            this.passtextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.passtextbox.Name = "passtextbox";
             this.passtextbox.PasswordChar = '●';
             this.passtextbox.PlaceholderForeColor = System.Drawing.Color.Red;
             this.passtextbox.PlaceholderText = "Password";
             this.passtextbox.SelectedText = "";
-            this.passtextbox.Size = new System.Drawing.Size(536, 66);
+            this.passtextbox.Size = new System.Drawing.Size(383, 47);
             this.passtextbox.TabIndex = 27;
             this.passtextbox.UseSystemPasswordChar = true;
             // 
@@ -212,10 +216,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("UTM Avo", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(750, 150);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(534, 116);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(396, 41);
+            this.label1.Size = new System.Drawing.Size(260, 25);
             this.label1.TabIndex = 28;
             this.label1.Text = "Change your Informations";
             // 
@@ -232,37 +237,37 @@
             this.cfpasstextbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.cfpasstextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.cfpasstextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cfpasstextbox.Font = new System.Drawing.Font("UTM Avo", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cfpasstextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cfpasstextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.cfpasstextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cfpasstextbox.Location = new System.Drawing.Point(679, 655);
-            this.cfpasstextbox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.cfpasstextbox.Location = new System.Drawing.Point(485, 487);
+            this.cfpasstextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cfpasstextbox.Name = "cfpasstextbox";
             this.cfpasstextbox.PasswordChar = '●';
             this.cfpasstextbox.PlaceholderForeColor = System.Drawing.Color.Red;
             this.cfpasstextbox.PlaceholderText = "Confirm Password";
             this.cfpasstextbox.SelectedText = "";
-            this.cfpasstextbox.Size = new System.Drawing.Size(536, 66);
+            this.cfpasstextbox.Size = new System.Drawing.Size(383, 47);
             this.cfpasstextbox.TabIndex = 29;
             this.cfpasstextbox.UseSystemPasswordChar = true;
             // 
             // newavatarpic
             // 
             this.newavatarpic.ImageRotate = 0F;
-            this.newavatarpic.Location = new System.Drawing.Point(1330, 150);
-            this.newavatarpic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.newavatarpic.Location = new System.Drawing.Point(961, 125);
             this.newavatarpic.Name = "newavatarpic";
-            this.newavatarpic.Size = new System.Drawing.Size(322, 318);
+            this.newavatarpic.Size = new System.Drawing.Size(207, 195);
+            this.newavatarpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.newavatarpic.TabIndex = 30;
             this.newavatarpic.TabStop = false;
             // 
             // setting
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(168F, 168F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1723, 882);
+            this.ClientSize = new System.Drawing.Size(1231, 630);
             this.Controls.Add(this.newavatarpic);
             this.Controls.Add(this.cfpasstextbox);
             this.Controls.Add(this.label1);
@@ -275,6 +280,7 @@
             this.Controls.Add(this.uploadButton);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "setting";
             this.Text = "setting";
             this.Load += new System.EventHandler(this.setting_Load);

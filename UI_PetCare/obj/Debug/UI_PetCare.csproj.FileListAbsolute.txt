@@ -335,3 +335,35 @@ C:\Users\ASUS\Documents\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.csproj.CoreCo
 C:\Users\ASUS\Documents\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.csproj.CopyComplete
 C:\Users\ASUS\Documents\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.exe
 C:\Users\ASUS\Documents\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.pdb
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\bin\Debug\UI_PetCare.exe.config
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\bin\Debug\UI_PetCare.exe
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\bin\Debug\UI_PetCare.pdb
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\bin\Debug\FireSharp.dll
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\bin\Debug\FireSharp.Serialization.JsonNet.dll
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\bin\Debug\Guna.UI2.dll
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\bin\Debug\Newtonsoft.Json.dll
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\bin\Debug\RestSharp.dll
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\bin\Debug\Newtonsoft.Json.xml
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\bin\Debug\RestSharp.xml
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\obj\Debug\UI_PetCare.csproj.AssemblyReference.cache
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\obj\Debug\UI_PetCare.csproj.SuggestedBindingRedirects.cache
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\obj\Debug\UI_PetCare.adopt.resources
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\obj\Debug\UI_PetCare.fLogin.resources
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\obj\Debug\UI_PetCare.Form2.resources
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\obj\Debug\UI_PetCare.Form_ChatBox.resources
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\obj\Debug\UI_PetCare.Form_HealthPetInfo.resources
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\obj\Debug\UI_PetCare.Form_post.resources
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\obj\Debug\UI_PetCare.Form_ResetPass.resources
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\obj\Debug\UI_PetCare.Form_FgtPass.resources
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\obj\Debug\UI_PetCare.Form3.resources
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\obj\Debug\UI_PetCare.Form_Register.resources
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\obj\Debug\UI_PetCare.Form_Verify.resources
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\obj\Debug\UI_PetCare.InComming.resources
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\obj\Debug\UI_PetCare.OutGoing.resources
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\obj\Debug\UI_PetCare.Properties.Resources.resources
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\obj\Debug\UI_PetCare.setting.resources
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\obj\Debug\UI_PetCare.csproj.GenerateResource.cache
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\obj\Debug\UI_PetCare.csproj.CoreCompileInputs.cache
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\obj\Debug\UI_PetCare.csproj.CopyComplete
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\obj\Debug\UI_PetCare.exe
+E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\obj\Debug\UI_PetCare.pdb
