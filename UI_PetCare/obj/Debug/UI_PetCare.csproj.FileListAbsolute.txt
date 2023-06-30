@@ -367,3 +367,35 @@ E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\obj\Debug\UI_PetCare.csproj.Core
 E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\obj\Debug\UI_PetCare.csproj.CopyComplete
 E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\obj\Debug\UI_PetCare.exe
 E:\Lap trinh mang can ban\UIPetCare2\UI_PetCare\obj\Debug\UI_PetCare.pdb
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\bin\Debug\UI_PetCare.exe.config
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\bin\Debug\UI_PetCare.exe
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\bin\Debug\UI_PetCare.pdb
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\bin\Debug\FireSharp.dll
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\bin\Debug\FireSharp.Serialization.JsonNet.dll
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\bin\Debug\Guna.UI2.dll
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\bin\Debug\Newtonsoft.Json.dll
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\bin\Debug\RestSharp.dll
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\bin\Debug\Newtonsoft.Json.xml
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\bin\Debug\RestSharp.xml
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\obj\Debug\UI_PetCare.csproj.AssemblyReference.cache
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\obj\Debug\UI_PetCare.csproj.SuggestedBindingRedirects.cache
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\obj\Debug\UI_PetCare.adopt.resources
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\obj\Debug\UI_PetCare.fLogin.resources
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\obj\Debug\UI_PetCare.Form2.resources
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\obj\Debug\UI_PetCare.Form_ChatBox.resources
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\obj\Debug\UI_PetCare.Form_HealthPetInfo.resources
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\obj\Debug\UI_PetCare.Form_post.resources
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\obj\Debug\UI_PetCare.Form_ResetPass.resources
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\obj\Debug\UI_PetCare.Form_FgtPass.resources
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\obj\Debug\UI_PetCare.Form3.resources
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\obj\Debug\UI_PetCare.Form_Register.resources
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\obj\Debug\UI_PetCare.Form_Verify.resources
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\obj\Debug\UI_PetCare.InComming.resources
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\obj\Debug\UI_PetCare.OutGoing.resources
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\obj\Debug\UI_PetCare.Properties.Resources.resources
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\obj\Debug\UI_PetCare.setting.resources
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\obj\Debug\UI_PetCare.csproj.GenerateResource.cache
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\obj\Debug\UI_PetCare.csproj.CoreCompileInputs.cache
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\obj\Debug\UI_PetCare.csproj.CopyComplete
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\obj\Debug\UI_PetCare.exe
+C:\Users\nguye\Source\Repos\UI_PetCare_30_06\UI_PetCare\obj\Debug\UI_PetCare.pdb

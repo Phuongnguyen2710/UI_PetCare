@@ -43,5 +43,10 @@ namespace UI_PetCare
             guna2TextBox1.SelectionLength = 0;
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

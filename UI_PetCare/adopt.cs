@@ -77,7 +77,7 @@ namespace UI_PetCare
             try
             {
                 
-                MessageBox.Show("Phan tu trong listPost" + listPost.Count);
+                //MessageBox.Show("Phan tu trong listPost" + listPost.Count);
                 if (current_num_id > listPost.Count-1) current_num_id = 0;
 
                 PostData obj = listPost[current_num_id];
@@ -116,7 +116,7 @@ namespace UI_PetCare
         private async void Adopt_ButtonClick(object sender, EventArgs e)
         {
             
-            MessageBox.Show("ID = " + id_petAdopt.ToString());
+            //MessageBox.Show("ID = " + id_petAdopt.ToString());
             FirebaseResponse response = await client.GetTaskAsync("Post/" + id_petAdopt.ToString());
             PostData obj = response.ResultAs<PostData>();
             PostData postData = new PostData();

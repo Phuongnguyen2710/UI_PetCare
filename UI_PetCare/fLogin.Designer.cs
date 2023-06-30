@@ -58,9 +58,9 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox1.InitialImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(432, 630);
+            this.pictureBox1.Size = new System.Drawing.Size(605, 882);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -69,10 +69,10 @@
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.BorderRadius = 50;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(447, 34);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(626, 48);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(497, 559);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(696, 783);
             this.guna2PictureBox1.TabIndex = 1;
             this.guna2PictureBox1.TabStop = false;
             // 
@@ -80,11 +80,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Window;
-            this.label1.Font = new System.Drawing.Font("UTM Avo", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("UTM Avo", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LightPink;
-            this.label1.Location = new System.Drawing.Point(605, 99);
+            this.label1.Location = new System.Drawing.Point(765, 85);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(233, 88);
+            this.label1.Size = new System.Drawing.Size(437, 165);
             this.label1.TabIndex = 2;
             this.label1.Text = "LOGIN";
             // 
@@ -92,10 +93,10 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(920, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(1288, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(53, 49);
+            this.pictureBox2.Size = new System.Drawing.Size(74, 69);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -105,10 +106,10 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.SystemColors.Window;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(532, 249);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(745, 349);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(53, 48);
+            this.pictureBox3.Size = new System.Drawing.Size(74, 67);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
@@ -117,10 +118,10 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.SystemColors.Window;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(533, 326);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox4.Location = new System.Drawing.Point(746, 456);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(52, 47);
+            this.pictureBox4.Size = new System.Drawing.Size(73, 66);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 5;
             this.pictureBox4.TabStop = false;
@@ -130,9 +131,10 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.Window;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.label2.Location = new System.Drawing.Point(599, 223);
+            this.label2.Location = new System.Drawing.Point(839, 312);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 20);
+            this.label2.Size = new System.Drawing.Size(135, 29);
             this.label2.TabIndex = 6;
             this.label2.Text = "User Name";
             // 
@@ -141,9 +143,10 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.Window;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.label3.Location = new System.Drawing.Point(599, 300);
+            this.label3.Location = new System.Drawing.Point(839, 420);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 20);
+            this.label3.Size = new System.Drawing.Size(120, 29);
             this.label3.TabIndex = 7;
             this.label3.Text = "Password";
             // 
@@ -159,17 +162,17 @@
             this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBox1.FillColor = System.Drawing.Color.LightPink;
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox1.Font = new System.Drawing.Font("UTM Avo", 11.14286F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(599, 249);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox1.Location = new System.Drawing.Point(839, 349);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.guna2TextBox1.PlaceholderText = "Enter your username";
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(259, 48);
+            this.guna2TextBox1.Size = new System.Drawing.Size(363, 67);
             this.guna2TextBox1.TabIndex = 0;
             // 
             // guna2TextBox2
@@ -184,21 +187,22 @@
             this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBox2.FillColor = System.Drawing.Color.LightPink;
             this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox2.Font = new System.Drawing.Font("UTM Avo", 11.14286F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(599, 326);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox2.Location = new System.Drawing.Point(839, 456);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '*';
             this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.guna2TextBox2.PlaceholderText = "Enter password";
             this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(259, 47);
+            this.guna2TextBox2.Size = new System.Drawing.Size(363, 66);
             this.guna2TextBox2.TabIndex = 8;
             // 
             // guna2Button1
             // 
+            this.guna2Button1.BackColor = System.Drawing.SystemColors.Window;
             this.guna2Button1.BorderRadius = 10;
             this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -207,10 +211,10 @@
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.guna2Button1.Font = new System.Drawing.Font("UTM Avo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.DarkRed;
-            this.guna2Button1.Location = new System.Drawing.Point(648, 454);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Button1.Location = new System.Drawing.Point(907, 636);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(133, 43);
+            this.guna2Button1.Size = new System.Drawing.Size(186, 60);
             this.guna2Button1.TabIndex = 9;
             this.guna2Button1.Text = "SIGN IN";
             this.guna2Button1.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
@@ -218,6 +222,7 @@
             // 
             // guna2Button2
             // 
+            this.guna2Button2.BackColor = System.Drawing.SystemColors.Window;
             this.guna2Button2.BorderRadius = 10;
             this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -226,10 +231,10 @@
             this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.guna2Button2.Font = new System.Drawing.Font("UTM Avo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.DarkRed;
-            this.guna2Button2.Location = new System.Drawing.Point(648, 516);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Button2.Location = new System.Drawing.Point(907, 722);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(133, 48);
+            this.guna2Button2.Size = new System.Drawing.Size(186, 67);
             this.guna2Button2.TabIndex = 10;
             this.guna2Button2.Text = "SIGN UP";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
@@ -245,10 +250,10 @@
             this.guna2Button3.FillColor = System.Drawing.Color.White;
             this.guna2Button3.Font = new System.Drawing.Font("UTM Avo", 9.857143F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button3.ForeColor = System.Drawing.Color.DarkRed;
-            this.guna2Button3.Location = new System.Drawing.Point(714, 407);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Button3.Location = new System.Drawing.Point(1000, 570);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(216, 34);
+            this.guna2Button3.Size = new System.Drawing.Size(302, 48);
             this.guna2Button3.TabIndex = 11;
             this.guna2Button3.Text = "Forgot Password?";
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
@@ -257,10 +262,10 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.checkBox1.Location = new System.Drawing.Point(581, 386);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.checkBox1.Location = new System.Drawing.Point(813, 540);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(119, 20);
+            this.checkBox1.Size = new System.Drawing.Size(165, 29);
             this.checkBox1.TabIndex = 12;
             this.checkBox1.Text = "Remember me";
             this.checkBox1.UseVisualStyleBackColor = false;
@@ -268,11 +273,11 @@
             // fLogin
             // 
             this.AcceptButton = this.guna2Button1;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(168F, 168F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(973, 630);
+            this.ClientSize = new System.Drawing.Size(1362, 882);
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.checkBox1);
@@ -289,7 +294,7 @@
             this.Controls.Add(this.guna2PictureBox1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "fLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

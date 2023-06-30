@@ -131,5 +131,10 @@ namespace UI_PetCare
             panel1.Location = new Point(746,54);
             OpenChildForm(new setting());
         }
+
+        private void AvatarPic_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
