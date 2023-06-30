@@ -78,7 +78,7 @@ namespace UI_PetCare
                                 }
                                 else
                                 {
-                                    MessageBox.Show("You have already login!");
+                                    MessageBox.Show("You have already login!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                     check = false;
                                     break;
                                 }
@@ -90,7 +90,7 @@ namespace UI_PetCare
                         {
                             if (login)
                             {
-                                MessageBox.Show("Welcome " + guna2TextBox1.Text);
+                                MessageBox.Show("Welcome " + guna2TextBox1.Text, "Login sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 ShareVariable.Username = guna2TextBox1.Text;
                                 ShareVariable.Phone = phone;
                                 ShareVariable.Email = email;
@@ -140,6 +140,19 @@ namespace UI_PetCare
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            //Show password using Checkbox
+            if (checkBox1.Checked)
+            {
+                guna2TextBox2.PasswordChar = '\0';
+            }
+            else
+            {
+                guna2TextBox2.PasswordChar = '*';
+            }
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)

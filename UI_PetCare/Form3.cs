@@ -79,19 +79,20 @@ namespace UI_PetCare
 
         private void label4_Click(object sender, EventArgs e)
         {   
-            panel1.Location = new Point(370, 54);
+            panel1.Location = new Point(372, 54);
             OpenChildForm(new adopt());
         }
 
         private void label5_Click(object sender, EventArgs e)
         {
-            panel1.Location = new Point(494, 54);
+            panel1.Location = new Point(482, 54);
+            //form finding mở ở đây
             
         }
 
         private void label6_Click(object sender, EventArgs e)
         {
-            panel1.Location = new Point(610, 54);
+            panel1.Location = new Point(580, 54);
             OpenChildForm(new Form_post());
 
         }
@@ -100,7 +101,7 @@ namespace UI_PetCare
         private void label3_Click(object sender, EventArgs e)
         {
 
-            panel1.Location = new Point(291, 54);
+            panel1.Location = new Point(257, 54);
             panel2.Controls.Clear();
 
         }
@@ -128,7 +129,7 @@ namespace UI_PetCare
 
         private void label2_Click_1(object sender, EventArgs e)
         {
-            panel1.Location = new Point(746,54);
+            panel1.Location = new Point(695,54);
             OpenChildForm(new setting());
         }
 

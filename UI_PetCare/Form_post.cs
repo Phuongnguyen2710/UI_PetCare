@@ -70,9 +70,10 @@ namespace UI_PetCare
             EmailTextBox.Text = ShareVariable.Email;
             PhoneTextBox.Text = ShareVariable.Phone;
 
-            NameClientTextBox.Enabled = true;
-            EmailTextBox.Enabled = true;
-            PhoneTextBox.Enabled = true;
+            NameClientTextBox.Enabled = false;
+            EmailTextBox.Enabled = false;
+            PhoneTextBox.Enabled = false;
+            bttMoreDetail.Enabled = false;
         }
 
         private void btt_Click_Click(object sender, EventArgs e)
@@ -158,7 +159,8 @@ namespace UI_PetCare
 
         private void status_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (status.SelectedItem.ToString() == "Adopt")
+            //Post for adopting pet
+            if (status.SelectedItem.ToString() == "Post for adopting pet")
             {
                 isadopted = false;
                 isfinded = true;

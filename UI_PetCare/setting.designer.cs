@@ -47,19 +47,19 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("UTM Avo", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(754, 146);
+            this.label1.Location = new System.Drawing.Point(539, 104);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(368, 38);
+            this.label1.Size = new System.Drawing.Size(265, 27);
             this.label1.TabIndex = 28;
             this.label1.Text = "Change your Informations";
             // 
             // newavatarpic
             // 
             this.newavatarpic.ImageRotate = 0F;
-            this.newavatarpic.Location = new System.Drawing.Point(1332, 146);
-            this.newavatarpic.Margin = new System.Windows.Forms.Padding(4);
+            this.newavatarpic.Location = new System.Drawing.Point(951, 104);
             this.newavatarpic.Name = "newavatarpic";
-            this.newavatarpic.Size = new System.Drawing.Size(337, 315);
+            this.newavatarpic.Size = new System.Drawing.Size(241, 225);
             this.newavatarpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.newavatarpic.TabIndex = 30;
             this.newavatarpic.TabStop = false;
@@ -80,14 +80,14 @@
             this.cfpasstextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cfpasstextbox.ForeColor = System.Drawing.Color.Gray;
             this.cfpasstextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cfpasstextbox.Location = new System.Drawing.Point(667, 644);
-            this.cfpasstextbox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.cfpasstextbox.Location = new System.Drawing.Point(476, 460);
+            this.cfpasstextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cfpasstextbox.Name = "cfpasstextbox";
             this.cfpasstextbox.PasswordChar = '●';
             this.cfpasstextbox.PlaceholderForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.cfpasstextbox.PlaceholderText = "Confirm Password";
             this.cfpasstextbox.SelectedText = "";
-            this.cfpasstextbox.Size = new System.Drawing.Size(553, 59);
+            this.cfpasstextbox.Size = new System.Drawing.Size(395, 42);
             this.cfpasstextbox.TabIndex = 29;
             this.cfpasstextbox.UseSystemPasswordChar = true;
             // 
@@ -107,14 +107,14 @@
             this.passtextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passtextbox.ForeColor = System.Drawing.Color.Gray;
             this.passtextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.passtextbox.Location = new System.Drawing.Point(667, 555);
-            this.passtextbox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.passtextbox.Location = new System.Drawing.Point(476, 396);
+            this.passtextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.passtextbox.Name = "passtextbox";
             this.passtextbox.PasswordChar = '●';
             this.passtextbox.PlaceholderForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.passtextbox.PlaceholderText = "Password";
             this.passtextbox.SelectedText = "";
-            this.passtextbox.Size = new System.Drawing.Size(553, 59);
+            this.passtextbox.Size = new System.Drawing.Size(395, 42);
             this.passtextbox.TabIndex = 27;
             this.passtextbox.UseSystemPasswordChar = true;
             // 
@@ -134,14 +134,14 @@
             this.emailtextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailtextbox.ForeColor = System.Drawing.Color.Gray;
             this.emailtextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.emailtextbox.Location = new System.Drawing.Point(667, 300);
-            this.emailtextbox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.emailtextbox.Location = new System.Drawing.Point(476, 214);
+            this.emailtextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.emailtextbox.Name = "emailtextbox";
             this.emailtextbox.PasswordChar = '\0';
             this.emailtextbox.PlaceholderForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.emailtextbox.PlaceholderText = "Email";
             this.emailtextbox.SelectedText = "";
-            this.emailtextbox.Size = new System.Drawing.Size(553, 59);
+            this.emailtextbox.Size = new System.Drawing.Size(395, 42);
             this.emailtextbox.TabIndex = 26;
             // 
             // usernametextbox
@@ -160,15 +160,15 @@
             this.usernametextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernametextbox.ForeColor = System.Drawing.Color.Gray;
             this.usernametextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.usernametextbox.Location = new System.Drawing.Point(667, 214);
-            this.usernametextbox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.usernametextbox.Location = new System.Drawing.Point(476, 153);
+            this.usernametextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.usernametextbox.Name = "usernametextbox";
             this.usernametextbox.PasswordChar = '\0';
             this.usernametextbox.PlaceholderForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.usernametextbox.PlaceholderText = "Username";
             this.usernametextbox.ReadOnly = true;
             this.usernametextbox.SelectedText = "";
-            this.usernametextbox.Size = new System.Drawing.Size(553, 68);
+            this.usernametextbox.Size = new System.Drawing.Size(395, 49);
             this.usernametextbox.TabIndex = 25;
             // 
             // locationtextbox
@@ -187,14 +187,14 @@
             this.locationtextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.locationtextbox.ForeColor = System.Drawing.Color.Gray;
             this.locationtextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.locationtextbox.Location = new System.Drawing.Point(667, 380);
-            this.locationtextbox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.locationtextbox.Location = new System.Drawing.Point(476, 271);
+            this.locationtextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.locationtextbox.Name = "locationtextbox";
             this.locationtextbox.PasswordChar = '\0';
             this.locationtextbox.PlaceholderForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.locationtextbox.PlaceholderText = "Location";
             this.locationtextbox.SelectedText = "";
-            this.locationtextbox.Size = new System.Drawing.Size(553, 59);
+            this.locationtextbox.Size = new System.Drawing.Size(395, 42);
             this.locationtextbox.TabIndex = 24;
             // 
             // phonetextbox
@@ -213,14 +213,14 @@
             this.phonetextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phonetextbox.ForeColor = System.Drawing.Color.Gray;
             this.phonetextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.phonetextbox.Location = new System.Drawing.Point(667, 463);
-            this.phonetextbox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.phonetextbox.Location = new System.Drawing.Point(476, 331);
+            this.phonetextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.phonetextbox.Name = "phonetextbox";
             this.phonetextbox.PasswordChar = '\0';
             this.phonetextbox.PlaceholderForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.phonetextbox.PlaceholderText = "Phone number";
             this.phonetextbox.SelectedText = "";
-            this.phonetextbox.Size = new System.Drawing.Size(553, 59);
+            this.phonetextbox.Size = new System.Drawing.Size(395, 42);
             this.phonetextbox.TabIndex = 23;
             // 
             // saveButton
@@ -234,9 +234,10 @@
             this.saveButton.FillColor = System.Drawing.Color.PaleVioletRed;
             this.saveButton.Font = new System.Drawing.Font("Montserrat Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveButton.ForeColor = System.Drawing.Color.Black;
-            this.saveButton.Location = new System.Drawing.Point(832, 771);
+            this.saveButton.Location = new System.Drawing.Point(594, 551);
+            this.saveButton.Margin = new System.Windows.Forms.Padding(2);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(211, 84);
+            this.saveButton.Size = new System.Drawing.Size(151, 60);
             this.saveButton.TabIndex = 22;
             this.saveButton.Text = "SAVE";
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
@@ -250,22 +251,23 @@
             this.uploadButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.uploadButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.uploadButton.FillColor = System.Drawing.Color.PaleVioletRed;
-            this.uploadButton.Font = new System.Drawing.Font("Montserrat Black", 15.85714F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uploadButton.Font = new System.Drawing.Font("Montserrat Black", 15.85714F, System.Drawing.FontStyle.Bold);
             this.uploadButton.ForeColor = System.Drawing.Color.Black;
-            this.uploadButton.Location = new System.Drawing.Point(1403, 514);
+            this.uploadButton.Location = new System.Drawing.Point(994, 367);
+            this.uploadButton.Margin = new System.Windows.Forms.Padding(2);
             this.uploadButton.Name = "uploadButton";
-            this.uploadButton.Size = new System.Drawing.Size(211, 71);
+            this.uploadButton.Size = new System.Drawing.Size(164, 45);
             this.uploadButton.TabIndex = 21;
             this.uploadButton.Text = "Upload";
             this.uploadButton.Click += new System.EventHandler(this.uploadButton_Click);
             // 
             // setting
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(168F, 168F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1732, 867);
+            this.ClientSize = new System.Drawing.Size(1237, 619);
             this.Controls.Add(this.newavatarpic);
             this.Controls.Add(this.cfpasstextbox);
             this.Controls.Add(this.label1);
@@ -278,6 +280,7 @@
             this.Controls.Add(this.uploadButton);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "setting";
             this.Text = "setting";
             this.Load += new System.EventHandler(this.setting_Load);
