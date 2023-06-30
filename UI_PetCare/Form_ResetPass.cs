@@ -64,15 +64,19 @@ namespace UI_PetCare
                             string usr_email = get.Value.email;
                             string usr_username = get.Value.username;
                             string usr_phonenumber = get.Value.phone;
+                            string usr_location = get.Value.location;
+                            string usr_avatar = get.Value.avatar;
+
                             if (usr_email == ShareVariable.Email)
                             {
                                 var user = new User
                                 {
-
                                     username = usr_username,
                                     password = hashPass,
                                     email = usr_email,
                                     phone = usr_phonenumber,
+                                    location = usr_location,
+                                    avatar = usr_avatar,
 
                                 };
                                 FirebaseResponse response2 = await client.UpdateTaskAsync("Users/" + usr_username, user);

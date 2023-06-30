@@ -96,6 +96,12 @@
     <Compile Include="Form_post.designer.cs">
       <DependentUpon>Form_post.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_ResetPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ResetPass.designer.cs">
+      <DependentUpon>Form_ResetPass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Verify.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,12 +135,6 @@
     </Compile>
     <Compile Include="fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form_ResetPass.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_ResetPass.Designer.cs">
-      <DependentUpon>Form_ResetPass.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_FgtPass.cs">
       <SubType>Form</SubType>
@@ -175,9 +175,6 @@
     <EmbeddedResource Include="Form_post.resx">
       <DependentUpon>Form_post.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_ResetPass.resx">
-      <DependentUpon>Form_ResetPass.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form_FgtPass.resx">
       <DependentUpon>Form_FgtPass.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Register.resx">
       <DependentUpon>Form_Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ResetPass.resx">
+      <DependentUpon>Form_ResetPass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Verify.resx">
       <DependentUpon>Form_Verify.cs</DependentUpon>

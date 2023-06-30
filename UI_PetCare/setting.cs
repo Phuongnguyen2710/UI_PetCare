@@ -44,51 +44,55 @@ namespace UI_PetCare
             else
             {
                 if (passtextbox.Text != cfpasstextbox.Text) MessageBox.Show("Password does not match!");
-                string hashPass = ComputeSha256Hash(cfpasstextbox.Text);
-                try
+                else
                 {
-                    FirebaseResponse res = await client.GetTaskAsync("Users/" + ShareVariable.Username);
-                    User usr = res.ResultAs<User>();
-                    string usr_avatar = usr.avatar.ToString();
-                    if (isClickedUpload)
+                    string hashPass = ComputeSha256Hash(cfpasstextbox.Text);
+                    try
                     {
-                        var user = new User
+                        FirebaseResponse res = await client.GetTaskAsync("Users/" + ShareVariable.Username);
+                        User usr = res.ResultAs<User>();
+                        string usr_avatar = usr.avatar.ToString();
+                        if (isClickedUpload)
                         {
+                            var user = new User
+                            {
 
-                            username = usernametextbox.Text,
-                            password = hashPass,
-                            email = emailtextbox.Text,
-                            phone = phonetextbox.Text,
-                            location = locationtextbox.Text,
-                            avatar = ImageIntoBase64String(newavatarpic),
+                                username = usernametextbox.Text,
+                                password = hashPass,
+                                email = emailtextbox.Text,
+                                phone = phonetextbox.Text,
+                                location = locationtextbox.Text,
+                                avatar = ImageIntoBase64String(newavatarpic),
 
-                        };
-                        FirebaseResponse response2 = await client.UpdateTaskAsync("Users/" + usernametextbox.Text, user);
+                            };
+                            FirebaseResponse response2 = await client.UpdateTaskAsync("Users/" + usernametextbox.Text, user);
+                        }
+                        else
+                        {
+                            var user = new User
+                            {
+
+                                username = usernametextbox.Text,
+                                password = hashPass,
+                                email = emailtextbox.Text,
+                                phone = phonetextbox.Text,
+                                location = locationtextbox.Text,
+                                avatar = usr_avatar,
+
+                            };
+
+                            isClickedUpload = false;
+                            FirebaseResponse response2 = await client.UpdateTaskAsync("Users/" + usernametextbox.Text, user);
+                        }
+                        MessageBox.Show("Update data successfully!");
                     }
-                    else
+
+                    catch (Exception ex)
                     {
-                        var user = new User
-                        {
-
-                            username = usernametextbox.Text,
-                            password = hashPass,
-                            email = emailtextbox.Text,
-                            phone = phonetextbox.Text,
-                            location = locationtextbox.Text,
-                            avatar = usr_avatar,
-
-                        };
-                        
-                        isClickedUpload = false;
-                    FirebaseResponse response2 = await client.UpdateTaskAsync("Users/" + usernametextbox.Text, user);
+                        MessageBox.Show(ex.Message);
                     }
-                    MessageBox.Show("Update data successfully!");
                 }
-
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+               
             }
         }
         
