@@ -80,7 +80,6 @@ D:\C#\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.adopt.resources
 D:\C#\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.Form_ResetPass.resources
 D:\C#\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.Form_FgtPass.resources
 D:\C#\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.Form_Verify.resources
-D:\C#\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.post.resources
 D:\C#\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.setting.resources
 E:\UI_PetCare\UI_PetCare\bin\Debug\UI_PetCare.exe.config
 E:\UI_PetCare\UI_PetCare\bin\Debug\UI_PetCare.exe
@@ -431,3 +430,9 @@ E:\Lap trinh mang can ban\UIPetCare4\UI_PetCare\obj\Debug\UI_PetCare.csproj.Core
 E:\Lap trinh mang can ban\UIPetCare4\UI_PetCare\obj\Debug\UI_PetCare.csproj.CopyComplete
 E:\Lap trinh mang can ban\UIPetCare4\UI_PetCare\obj\Debug\UI_PetCare.exe
 E:\Lap trinh mang can ban\UIPetCare4\UI_PetCare\obj\Debug\UI_PetCare.pdb
+D:\C#\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.Form_ChatBox.resources
+D:\C#\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.Form_HealthPetInfo.resources
+D:\C#\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.Form_post.resources
+D:\C#\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.InComming.resources
+D:\C#\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.OutGoing.resources
+D:\C#\UI_PetCare\UI_PetCare\obj\Debug\UI_PetCare.find.resources

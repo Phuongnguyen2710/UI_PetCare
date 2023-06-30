@@ -86,8 +86,8 @@ namespace UI_PetCare
         private void label5_Click(object sender, EventArgs e)
         {
             panel1.Location = new Point(482, 54);
-            //form finding mở ở đây
-            
+            OpenChildForm(new find());
+
         }
 
         private void label6_Click(object sender, EventArgs e)

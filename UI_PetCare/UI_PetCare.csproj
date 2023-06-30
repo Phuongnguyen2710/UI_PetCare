@@ -72,6 +72,12 @@
     </Compile>
     <Compile Include="Chat.cs" />
     <Compile Include="CounterClass.cs" />
+    <Compile Include="find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="find.Designer.cs">
+      <DependentUpon>find.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +165,9 @@
     <Compile Include="User.cs" />
     <EmbeddedResource Include="adopt.resx">
       <DependentUpon>adopt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="find.resx">
+      <DependentUpon>find.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
