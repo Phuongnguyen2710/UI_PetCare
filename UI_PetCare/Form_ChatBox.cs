@@ -289,7 +289,7 @@ namespace UI_PetCare
             ColumnHeader columnHeader3 = new ColumnHeader();
             columnHeader2.Text = string.Empty;
             columnHeader3.Text = string.Empty;
-            columnHeader2.Width = 400;
+            columnHeader2.Width = 350;
             columnHeader3.Width = 400;
             columnHeader3.TextAlign = HorizontalAlignment.Right;
             listView2.Columns.Add(columnHeader2);
