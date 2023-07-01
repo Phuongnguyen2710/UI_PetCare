@@ -32,10 +32,8 @@
             this.petImage = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.Weight = new Guna.UI2.WinForms.Guna2TextBox();
             this.preOwner = new Guna.UI2.WinForms.Guna2TextBox();
             this.Vaccine = new Guna.UI2.WinForms.Guna2TextBox();
-            this.petHeight = new Guna.UI2.WinForms.Guna2TextBox();
             this.PetType = new Guna.UI2.WinForms.Guna2TextBox();
             this.PetBirth = new Guna.UI2.WinForms.Guna2TextBox();
             this.PetSex = new Guna.UI2.WinForms.Guna2TextBox();
@@ -79,30 +77,6 @@
             this.label2.Size = new System.Drawing.Size(60, 15);
             this.label2.TabIndex = 31;
             this.label2.Text = "Date Post";
-            // 
-            // Weight
-            // 
-            this.Weight.BorderColor = System.Drawing.Color.DarkSlateGray;
-            this.Weight.BorderRadius = 10;
-            this.Weight.BorderThickness = 2;
-            this.Weight.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Weight.DefaultText = "Weight";
-            this.Weight.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.Weight.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.Weight.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Weight.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Weight.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Weight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Weight.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Weight.Location = new System.Drawing.Point(609, 287);
-            this.Weight.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.Weight.Name = "Weight";
-            this.Weight.PasswordChar = '\0';
-            this.Weight.PlaceholderForeColor = System.Drawing.Color.Red;
-            this.Weight.PlaceholderText = "Enter Color";
-            this.Weight.SelectedText = "";
-            this.Weight.Size = new System.Drawing.Size(190, 44);
-            this.Weight.TabIndex = 35;
             // 
             // preOwner
             // 
@@ -152,30 +126,6 @@
             this.Vaccine.Size = new System.Drawing.Size(180, 44);
             this.Vaccine.TabIndex = 33;
             // 
-            // petHeight
-            // 
-            this.petHeight.BorderColor = System.Drawing.Color.DarkSlateGray;
-            this.petHeight.BorderRadius = 10;
-            this.petHeight.BorderThickness = 2;
-            this.petHeight.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.petHeight.DefaultText = "Height";
-            this.petHeight.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.petHeight.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.petHeight.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.petHeight.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.petHeight.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.petHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.petHeight.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.petHeight.Location = new System.Drawing.Point(372, 287);
-            this.petHeight.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.petHeight.Name = "petHeight";
-            this.petHeight.PasswordChar = '\0';
-            this.petHeight.PlaceholderForeColor = System.Drawing.Color.Red;
-            this.petHeight.PlaceholderText = "";
-            this.petHeight.SelectedText = "";
-            this.petHeight.Size = new System.Drawing.Size(180, 44);
-            this.petHeight.TabIndex = 32;
-            // 
             // PetType
             // 
             this.PetType.BorderColor = System.Drawing.Color.DarkSlateGray;
@@ -214,7 +164,7 @@
             this.PetBirth.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PetBirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PetBirth.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PetBirth.Location = new System.Drawing.Point(609, 225);
+            this.PetBirth.Location = new System.Drawing.Point(609, 255);
             this.PetBirth.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.PetBirth.Name = "PetBirth";
             this.PetBirth.PasswordChar = '\0';
@@ -238,7 +188,7 @@
             this.PetSex.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PetSex.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PetSex.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PetSex.Location = new System.Drawing.Point(372, 225);
+            this.PetSex.Location = new System.Drawing.Point(372, 255);
             this.PetSex.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.PetSex.Name = "PetSex";
             this.PetSex.PasswordChar = '\0';
@@ -289,7 +239,7 @@
             this.Adopt_Button.Name = "Adopt_Button";
             this.Adopt_Button.Size = new System.Drawing.Size(140, 38);
             this.Adopt_Button.TabIndex = 14;
-            this.Adopt_Button.Text = "Your pet?";
+            this.Adopt_Button.Text = "I FOUND";
             this.Adopt_Button.Click += new System.EventHandler(this.Find_ButtonClick);
             // 
             // next_Button
@@ -317,10 +267,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(927, 503);
             this.Controls.Add(this.next_Button);
-            this.Controls.Add(this.Weight);
             this.Controls.Add(this.preOwner);
             this.Controls.Add(this.Vaccine);
-            this.Controls.Add(this.petHeight);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.petImage);
@@ -351,10 +299,8 @@
         private System.Windows.Forms.PictureBox petImage;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2TextBox Weight;
         private Guna.UI2.WinForms.Guna2TextBox preOwner;
         private Guna.UI2.WinForms.Guna2TextBox Vaccine;
-        private Guna.UI2.WinForms.Guna2TextBox petHeight;
         private Guna.UI2.WinForms.Guna2ImageButton next_Button;
     }
 }

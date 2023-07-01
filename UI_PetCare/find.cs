@@ -49,10 +49,6 @@ namespace UI_PetCare
                 PetBirth.Text = obj.PetDob;
                 PetSex.Text = obj.PetSex;
                 PetType.Text = obj.PetSubtype;
-                petHeight.Text = obj.Health_Pet.Height;
-                Weight.Text = obj.Health_Pet.Weight;
-                Vaccine.Text = obj.Health_Pet.Vaccinations;
-                preOwner.Text = obj.Health_Pet.PreviousOwner;
                 label2.Text = obj.DatePost;
                 label1.Text = obj.NameClient;
                 string imagestring = obj.imgstr;
@@ -101,7 +97,7 @@ namespace UI_PetCare
             listPost.Clear();
             testOn();
             isCheck = false;
-            MessageBox.Show("You have found your lost pet, congrats!", "Congarts");
+            MessageBox.Show("You have found a lost pet and reported it to its owner!", "Thankful!");
 
             string postEmail = result.Email;
             IFirebaseConfig config = new FirebaseConfig
@@ -123,7 +119,7 @@ namespace UI_PetCare
             string usremail = usr.email;
             string usrphone = usr.phone;
             string usrlocation = usr.location;
-            messbody = $"The pet named {petName} in your post was found by its owner.\nHere is the owner's information\n     Name: {user}\n     Email: {usremail}\n     Phone number: {usrphone}\n     Location: {usrlocation}";
+            messbody = $"Good news! Your lost pet named {PetName} has been found!\nHere is the information of the Finder:\n     Name: {user}\n     Email: {usremail}\n     Phone number: {usrphone}\n     Location: {usrlocation}";
             message.To.Add(to);
             message.From = new MailAddress(from);
             message.Body = messbody;
